@@ -1,13 +1,7 @@
-from fastapi import FastAPI, Depends, HTTPException, status
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from sqlalchemy.orm import Session
-from uuid import UUID
 from api.app.core.config import settings
-from api.app.db.session import get_db
-from api.app.db.models import User
-from api.app.schemas.auth import UserCreate, UserLogin, TokenResponse, RefreshRequest, UserOut
-from api.app.core.security import hash_password, verify_password, create_access_token, create_refresh_token, decode_token
-from api.app.auth.dependencies import get_current_user
+from api.app.routers.auth import router as auth_router
 
 app = FastAPI(title="SCAN Legacy API")
 
@@ -19,91 +13,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+app.include_router(auth_router)
+
 
 @app.get("/health")
 def health_check():
     return {"status": "ok", "environment": settings.ENVIRONMENT}
-
-
-@app.post("/auth/register", response_model=UserOut, status_code=status.HTTP_201_CREATED)
-def register(user_data: UserCreate, db: Session = Depends(get_db)):
-    existing_user = db.query(User).filter(User.email == user_data.email).first()
-    if existing_user:
-        raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST,
-            detail="Email already registered"
-        )
-    
-    hashed_password = hash_password(user_data.password)
-    new_user = User(
-        email=user_data.email,
-        hashed_password=hashed_password,
-        role="contributor"
-    )
-    db.add(new_user)
-    db.commit()
-    db.refresh(new_user)
-    
-    return new_user
-
-
-@app.post("/auth/login", response_model=TokenResponse)
-def login(user_data: UserLogin, db: Session = Depends(get_db)):
-    user = db.query(User).filter(User.email == user_data.email).first()
-    
-    if not user or not verify_password(user_data.password, user.hashed_password):
-        raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="Invalid credentials"
-        )
-    
-    access_token = create_access_token(str(user.id), user.role)
-    refresh_token = create_refresh_token(str(user.id))
-    
-    return TokenResponse(
-        access_token=access_token,
-        refresh_token=refresh_token
-    )
-
-
-@app.post("/auth/refresh", response_model=TokenResponse)
-def refresh(refresh_data: RefreshRequest, db: Session = Depends(get_db)):
-    try:
-        payload = decode_token(refresh_data.refresh_token)
-        user_id = payload.get("sub")
-        token_type = payload.get("type")
-        
-        if user_id is None or token_type != "refresh":
-            raise HTTPException(
-                status_code=status.HTTP_401_UNAUTHORIZED,
-                detail="Invalid refresh token"
-            )
-        
-        user = db.query(User).filter(User.id == UUID(user_id)).first()
-        if not user:
-            raise HTTPException(
-                status_code=status.HTTP_401_UNAUTHORIZED,
-                detail="User not found"
-            )
-        
-        access_token = create_access_token(str(user.id), user.role)
-        refresh_token = create_refresh_token(str(user.id))
-        
-        # NOTE: Old refresh token is not revoked/added to blocklist - this is a known limitation
-        # In production, implement refresh token blocklist for proper rotation
-        
-        return TokenResponse(
-            access_token=access_token,
-            refresh_token=refresh_token
-        )
-        
-    except ValueError:
-        raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="Invalid refresh token"
-        )
-
-
-@app.get("/auth/me", response_model=UserOut)
-def get_me(current_user: User = Depends(get_current_user)):
-    return current_user
