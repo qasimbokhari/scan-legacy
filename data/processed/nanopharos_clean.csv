@@ -1,0 +1,845 @@
+name,material_type,core_size_nm,zeta_potential_mv,surface_area_m2g,coating,source_type,doi,ic50,ec50,cell_line,exposure_time_h
+CuO,CuO,12.8,7.6,74.2,,literature_mined,,,,RAW264.7,24.0
+ZnO,ZnO,22.6,28.8,47.4,,literature_mined,,,,BEAS-2B,24.0
+ZnO,ZnO,22.6,28.8,47.4,,literature_mined,,,,BEAS-2B,24.0
+ZnO,ZnO,22.6,28.8,47.4,,literature_mined,,,,RAW264.7,24.0
+Mn2O3,Mn2O3,51.5,-46.1,25.9,,literature_mined,,,,RAW264.7,24.0
+ZnO,ZnO,22.6,28.8,47.4,,literature_mined,,,,BEAS-2B,24.0
+ZnO,ZnO,22.6,28.8,47.4,,literature_mined,,,,RAW264.7,24.0
+ZnO,ZnO,22.6,28.8,47.4,,literature_mined,,,,BEAS-2B,24.0
+CoO,CoO,71.8,21.6,13.0,,literature_mined,,,,BEAS-2B,24.0
+ZnO,ZnO,22.6,28.8,47.4,,literature_mined,,,,RAW264.7,24.0
+CuO,CuO,12.8,7.6,74.2,,literature_mined,,,,RAW264.7,24.0
+ZnO,ZnO,22.6,28.8,47.4,,literature_mined,,,,BEAS-2B,24.0
+CuO,CuO,12.8,7.6,74.2,,literature_mined,,,,BEAS-2B,24.0
+Mn2O3,Mn2O3,51.5,-46.1,25.9,,literature_mined,,,,BEAS-2B,24.0
+CuO,CuO,12.8,7.6,74.2,,literature_mined,,,,RAW264.7,24.0
+Mn2O3,Mn2O3,51.5,-46.1,25.9,,literature_mined,,,,RAW264.7,24.0
+Mn2O3,Mn2O3,51.5,-46.1,25.9,,literature_mined,,,,BEAS-2B,24.0
+ZnO,ZnO,22.6,28.8,47.4,,literature_mined,,,,RAW264.7,24.0
+Mn2O3,Mn2O3,51.5,-46.1,25.9,,literature_mined,,,,BEAS-2B,24.0
+CoO,CoO,71.8,21.6,13.0,,literature_mined,,,,RAW264.7,24.0
+Mn2O3,Mn2O3,51.5,-46.1,25.9,,literature_mined,,,,BEAS-2B,24.0
+Mn2O3,Mn2O3,51.5,-46.1,25.9,,literature_mined,,,,RAW264.7,24.0
+CuO,CuO,12.8,7.6,74.2,,literature_mined,,,,BEAS-2B,24.0
+CuO,CuO,12.8,7.6,74.2,,literature_mined,,,,BEAS-2B,24.0
+ZnO,ZnO,22.6,28.8,47.4,,literature_mined,,,,BEAS-2B,24.0
+CoO,CoO,71.8,21.6,13.0,,literature_mined,,,,BEAS-2B,24.0
+Mn2O3,Mn2O3,51.5,-46.1,25.9,,literature_mined,,,,RAW264.7,24.0
+ZnO,ZnO,22.6,28.8,47.4,,literature_mined,,,,RAW264.7,24.0
+ZnO,ZnO,22.6,28.8,47.4,,literature_mined,,,,BEAS-2B,24.0
+CuO,CuO,12.8,7.6,74.2,,literature_mined,,,,RAW264.7,24.0
+CuO,CuO,12.8,7.6,74.2,,literature_mined,,,,BEAS-2B,24.0
+Mn2O3,Mn2O3,51.5,-46.1,25.9,,literature_mined,,,,BEAS-2B,24.0
+CuO,CuO,12.8,7.6,74.2,,literature_mined,,,,RAW264.7,24.0
+CoO,CoO,71.8,21.6,13.0,,literature_mined,,,,RAW264.7,24.0
+Mn2O3,Mn2O3,51.5,-46.1,25.9,,literature_mined,,,,RAW264.7,24.0
+CoO,CoO,71.8,21.6,13.0,,literature_mined,,,,BEAS-2B,24.0
+ZnO,ZnO,22.6,28.8,47.4,,literature_mined,,,,BEAS-2B,24.0
+CoO,CoO,71.8,21.6,13.0,,literature_mined,,,,RAW264.7,24.0
+ZnO,ZnO,22.6,28.8,47.4,,literature_mined,,,,RAW264.7,24.0
+Mn2O3,Mn2O3,51.5,-46.1,25.9,,literature_mined,,,,BEAS-2B,24.0
+ZnO,ZnO,22.6,28.8,47.4,,literature_mined,,,,RAW264.7,24.0
+ZnO,ZnO,22.6,28.8,47.4,,literature_mined,,,,BEAS-2B,24.0
+ZnO,ZnO,22.6,28.8,47.4,,literature_mined,,,,RAW264.7,24.0
+CuO,CuO,12.8,7.6,74.2,,literature_mined,,,,BEAS-2B,24.0
+CuO,CuO,12.8,7.6,74.2,,literature_mined,,,,RAW264.7,24.0
+Mn2O3,Mn2O3,51.5,-46.1,25.9,,literature_mined,,,,RAW264.7,24.0
+CuO,CuO,12.8,7.6,74.2,,literature_mined,,,,BEAS-2B,24.0
+Mn2O3,Mn2O3,51.5,-46.1,25.9,,literature_mined,,,,RAW264.7,24.0
+CoO,CoO,71.8,21.6,13.0,,literature_mined,,,,RAW264.7,24.0
+CoO,CoO,71.8,21.6,13.0,,literature_mined,,,,BEAS-2B,24.0
+CuO,CuO,12.8,7.6,74.2,,literature_mined,,,,RAW264.7,24.0
+CoO,CoO,71.8,21.6,13.0,,literature_mined,,,,RAW264.7,24.0
+CoO,CoO,71.8,21.6,13.0,,literature_mined,,,,BEAS-2B,24.0
+ZnO,ZnO,22.6,28.8,47.4,,literature_mined,,,,RAW264.7,24.0
+CuO,CuO,12.8,7.6,74.2,,literature_mined,,,,BEAS-2B,24.0
+ZnO,ZnO,22.6,28.8,47.4,,literature_mined,,,,BEAS-2B,24.0
+Mn2O3,Mn2O3,51.5,-46.1,25.9,,literature_mined,,,,BEAS-2B,24.0
+Mn2O3,Mn2O3,51.5,-46.1,25.9,,literature_mined,,,,RAW264.7,24.0
+Mn2O3,Mn2O3,51.5,-46.1,25.9,,literature_mined,,,,BEAS-2B,24.0
+Mn2O3,Mn2O3,51.5,-46.1,25.9,,literature_mined,,,,RAW264.7,24.0
+ZnO,ZnO,22.6,28.8,47.4,,literature_mined,,,,RAW264.7,24.0
+CuO,CuO,12.8,7.6,74.2,,literature_mined,,,,RAW264.7,24.0
+ZnO,ZnO,22.6,28.8,47.4,,literature_mined,,,,BEAS-2B,24.0
+CoO,CoO,71.8,21.6,13.0,,literature_mined,,,,BEAS-2B,24.0
+CoO,CoO,71.8,21.6,13.0,,literature_mined,,,,BEAS-2B,24.0
+CuO,CuO,12.8,7.6,74.2,,literature_mined,,,,RAW264.7,24.0
+CuO,CuO,12.8,7.6,74.2,,literature_mined,,,,RAW264.7,24.0
+CuO,CuO,12.8,7.6,74.2,,literature_mined,,,,BEAS-2B,24.0
+CoO,CoO,71.8,21.6,13.0,,literature_mined,,,,RAW264.7,24.0
+CoO,CoO,71.8,21.6,13.0,,literature_mined,,,,RAW264.7,24.0
+CoO,CoO,71.8,21.6,13.0,,literature_mined,,,,BEAS-2B,24.0
+CuO,CuO,12.8,7.6,74.2,,literature_mined,,,,BEAS-2B,24.0
+Mn2O3,Mn2O3,51.5,-46.1,25.9,,literature_mined,,,,BEAS-2B,24.0
+ZnO,ZnO,22.6,28.8,47.4,,literature_mined,,,,RAW264.7,24.0
+ZnO,ZnO,22.6,28.8,47.4,,literature_mined,,,,RAW264.7,24.0
+Mn2O3,Mn2O3,51.5,-46.1,25.9,,literature_mined,,,,BEAS-2B,24.0
+Mn2O3,Mn2O3,51.5,-46.1,25.9,,literature_mined,,,,RAW264.7,24.0
+Mn2O3,Mn2O3,51.5,-46.1,25.9,,literature_mined,,,,BEAS-2B,24.0
+CuO,CuO,12.8,7.6,74.2,,literature_mined,,,,RAW264.7,24.0
+ZnO,ZnO,22.6,28.8,47.4,,literature_mined,,,,BEAS-2B,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,RAW264.7,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,RAW264.7,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,RAW264.7,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,BEAS-2B,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,BEAS-2B,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,BEAS-2B,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,RAW264.7,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,BEAS-2B,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,BEAS-2B,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,RAW264.7,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,RAW264.7,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,RAW264.7,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,BEAS-2B,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,BEAS-2B,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,BEAS-2B,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,RAW264.7,24.0
+NiO,NiO,13.1,27.6,68.7,,literature_mined,,,,BEAS-2B,24.0
+Sb2O3,Sb2O3,11.8,-35.3,93.6,,literature_mined,,,,RAW264.7,24.0
+Sb2O3,Sb2O3,11.8,-35.3,93.6,,literature_mined,,,,RAW264.7,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,RAW264.7,24.0
+ZnO,ZnO,22.6,28.8,47.4,,literature_mined,,,,BEAS-2B,24.0
+CoO,CoO,71.8,21.6,13.0,,literature_mined,,,,BEAS-2B,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,BEAS-2B,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,BEAS-2B,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,RAW264.7,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,BEAS-2B,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,RAW264.7,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,RAW264.7,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,RAW264.7,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,RAW264.7,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,RAW264.7,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,RAW264.7,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,RAW264.7,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,RAW264.7,24.0
+NiO,NiO,13.1,27.6,68.7,,literature_mined,,,,BEAS-2B,24.0
+NiO,NiO,13.1,27.6,68.7,,literature_mined,,,,BEAS-2B,24.0
+NiO,NiO,13.1,27.6,68.7,,literature_mined,,,,RAW264.7,24.0
+Sb2O3,Sb2O3,11.8,-35.3,93.6,,literature_mined,,,,BEAS-2B,24.0
+Sb2O3,Sb2O3,11.8,-35.3,93.6,,literature_mined,,,,BEAS-2B,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,BEAS-2B,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,BEAS-2B,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,RAW264.7,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,RAW264.7,24.0
+CoO,CoO,71.8,21.6,13.0,,literature_mined,,,,RAW264.7,24.0
+CuO,CuO,12.8,7.6,74.2,,literature_mined,,,,BEAS-2B,24.0
+Mn2O3,Mn2O3,51.5,-46.1,25.9,,literature_mined,,,,BEAS-2B,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,BEAS-2B,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,RAW264.7,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,BEAS-2B,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,BEAS-2B,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,BEAS-2B,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,RAW264.7,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,BEAS-2B,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,BEAS-2B,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,BEAS-2B,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,BEAS-2B,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,RAW264.7,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,BEAS-2B,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,RAW264.7,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,BEAS-2B,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,RAW264.7,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,BEAS-2B,24.0
+NiO,NiO,13.1,27.6,68.7,,literature_mined,,,,RAW264.7,24.0
+NiO,NiO,13.1,27.6,68.7,,literature_mined,,,,RAW264.7,24.0
+NiO,NiO,13.1,27.6,68.7,,literature_mined,,,,RAW264.7,24.0
+Sb2O3,Sb2O3,11.8,-35.3,93.6,,literature_mined,,,,BEAS-2B,24.0
+Sb2O3,Sb2O3,11.8,-35.3,93.6,,literature_mined,,,,RAW264.7,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,BEAS-2B,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,RAW264.7,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,BEAS-2B,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,RAW264.7,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,BEAS-2B,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,BEAS-2B,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,BEAS-2B,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,RAW264.7,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,RAW264.7,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,RAW264.7,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,BEAS-2B,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,RAW264.7,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,RAW264.7,24.0
+NiO,NiO,13.1,27.6,68.7,,literature_mined,,,,BEAS-2B,24.0
+Sb2O3,Sb2O3,11.8,-35.3,93.6,,literature_mined,,,,RAW264.7,24.0
+Sb2O3,Sb2O3,11.8,-35.3,93.6,,literature_mined,,,,RAW264.7,24.0
+CuO,CuO,12.8,7.6,74.2,,literature_mined,,,,BEAS-2B,24.0
+CoO,CoO,71.8,21.6,13.0,,literature_mined,,,,BEAS-2B,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,RAW264.7,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,RAW264.7,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,BEAS-2B,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,BEAS-2B,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,RAW264.7,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,RAW264.7,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,RAW264.7,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,RAW264.7,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,BEAS-2B,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,RAW264.7,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,BEAS-2B,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,BEAS-2B,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,RAW264.7,24.0
+NiO,NiO,13.1,27.6,68.7,,literature_mined,,,,RAW264.7,24.0
+Sb2O3,Sb2O3,11.8,-35.3,93.6,,literature_mined,,,,BEAS-2B,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,BEAS-2B,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,BEAS-2B,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,RAW264.7,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,RAW264.7,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,RAW264.7,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,RAW264.7,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,BEAS-2B,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,BEAS-2B,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,RAW264.7,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,RAW264.7,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,RAW264.7,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,BEAS-2B,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,RAW264.7,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,RAW264.7,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,BEAS-2B,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,BEAS-2B,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,BEAS-2B,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,BEAS-2B,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,BEAS-2B,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,RAW264.7,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,RAW264.7,24.0
+NiO,NiO,13.1,27.6,68.7,,literature_mined,,,,BEAS-2B,24.0
+NiO,NiO,13.1,27.6,68.7,,literature_mined,,,,BEAS-2B,24.0
+NiO,NiO,13.1,27.6,68.7,,literature_mined,,,,RAW264.7,24.0
+Sb2O3,Sb2O3,11.8,-35.3,93.6,,literature_mined,,,,RAW264.7,24.0
+CoO,CoO,71.8,21.6,13.0,,literature_mined,,,,BEAS-2B,24.0
+CuO,CuO,12.8,7.6,74.2,,literature_mined,,,,RAW264.7,24.0
+Mn2O3,Mn2O3,51.5,-46.1,25.9,,literature_mined,,,,RAW264.7,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,BEAS-2B,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,BEAS-2B,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,BEAS-2B,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,RAW264.7,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,BEAS-2B,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,BEAS-2B,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,BEAS-2B,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,RAW264.7,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,BEAS-2B,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,BEAS-2B,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,RAW264.7,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,BEAS-2B,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,RAW264.7,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,RAW264.7,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,RAW264.7,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,RAW264.7,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,RAW264.7,24.0
+NiO,NiO,13.1,27.6,68.7,,literature_mined,,,,RAW264.7,24.0
+NiO,NiO,13.1,27.6,68.7,,literature_mined,,,,RAW264.7,24.0
+Sb2O3,Sb2O3,11.8,-35.3,93.6,,literature_mined,,,,BEAS-2B,24.0
+Sb2O3,Sb2O3,11.8,-35.3,93.6,,literature_mined,,,,BEAS-2B,24.0
+Sb2O3,Sb2O3,11.8,-35.3,93.6,,literature_mined,,,,BEAS-2B,24.0
+Sb2O3,Sb2O3,11.8,-35.3,93.6,,literature_mined,,,,RAW264.7,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,BEAS-2B,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,RAW264.7,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,BEAS-2B,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,RAW264.7,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,RAW264.7,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,RAW264.7,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,RAW264.7,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,BEAS-2B,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,BEAS-2B,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,BEAS-2B,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,BEAS-2B,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,BEAS-2B,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,RAW264.7,24.0
+NiO,NiO,13.1,27.6,68.7,,literature_mined,,,,BEAS-2B,24.0
+NiO,NiO,13.1,27.6,68.7,,literature_mined,,,,RAW264.7,24.0
+NiO,NiO,13.1,27.6,68.7,,literature_mined,,,,RAW264.7,24.0
+Sb2O3,Sb2O3,11.8,-35.3,93.6,,literature_mined,,,,BEAS-2B,24.0
+Sb2O3,Sb2O3,11.8,-35.3,93.6,,literature_mined,,,,RAW264.7,24.0
+Sb2O3,Sb2O3,11.8,-35.3,93.6,,literature_mined,,,,RAW264.7,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,BEAS-2B,24.0
+CoO,CoO,71.8,21.6,13.0,,literature_mined,,,,RAW264.7,24.0
+CuO,CuO,12.8,7.6,74.2,,literature_mined,,,,BEAS-2B,24.0
+CuO,CuO,12.8,7.6,74.2,,literature_mined,,,,RAW264.7,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,BEAS-2B,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,BEAS-2B,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,RAW264.7,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,RAW264.7,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,RAW264.7,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,BEAS-2B,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,BEAS-2B,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,RAW264.7,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,RAW264.7,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,RAW264.7,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,BEAS-2B,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,BEAS-2B,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,BEAS-2B,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,RAW264.7,24.0
+NiO,NiO,13.1,27.6,68.7,,literature_mined,,,,BEAS-2B,24.0
+NiO,NiO,13.1,27.6,68.7,,literature_mined,,,,BEAS-2B,24.0
+Sb2O3,Sb2O3,11.8,-35.3,93.6,,literature_mined,,,,RAW264.7,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,BEAS-2B,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,BEAS-2B,24.0
+ZnO,ZnO,22.6,28.8,47.4,,literature_mined,,,,RAW264.7,24.0
+CoO,CoO,71.8,21.6,13.0,,literature_mined,,,,RAW264.7,24.0
+ZnO,ZnO,22.6,28.8,47.4,,literature_mined,,,,BEAS-2B,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,BEAS-2B,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,RAW264.7,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,RAW264.7,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,RAW264.7,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,BEAS-2B,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,BEAS-2B,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,BEAS-2B,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,BEAS-2B,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,RAW264.7,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,RAW264.7,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,BEAS-2B,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,BEAS-2B,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,BEAS-2B,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,RAW264.7,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,BEAS-2B,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,RAW264.7,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,RAW264.7,24.0
+CoO,CoO,71.8,21.6,13.0,,literature_mined,,,,BEAS-2B,24.0
+Mn2O3,Mn2O3,51.5,-46.1,25.9,,literature_mined,,,,RAW264.7,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,BEAS-2B,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,BEAS-2B,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,RAW264.7,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,BEAS-2B,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,RAW264.7,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,BEAS-2B,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,RAW264.7,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,RAW264.7,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,RAW264.7,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,BEAS-2B,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,BEAS-2B,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,BEAS-2B,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,RAW264.7,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,RAW264.7,24.0
+NiO,NiO,13.1,27.6,68.7,,literature_mined,,,,BEAS-2B,24.0
+Sb2O3,Sb2O3,11.8,-35.3,93.6,,literature_mined,,,,RAW264.7,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,BEAS-2B,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,RAW264.7,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,RAW264.7,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,RAW264.7,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,RAW264.7,24.0
+Mn2O3,Mn2O3,51.5,-46.1,25.9,,literature_mined,,,,BEAS-2B,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,BEAS-2B,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,RAW264.7,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,RAW264.7,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,RAW264.7,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,RAW264.7,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,RAW264.7,24.0
+Sb2O3,Sb2O3,11.8,-35.3,93.6,,literature_mined,,,,BEAS-2B,24.0
+Sb2O3,Sb2O3,11.8,-35.3,93.6,,literature_mined,,,,RAW264.7,24.0
+Sb2O3,Sb2O3,11.8,-35.3,93.6,,literature_mined,,,,RAW264.7,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,BEAS-2B,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,BEAS-2B,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,BEAS-2B,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,BEAS-2B,24.0
+Mn2O3,Mn2O3,51.5,-46.1,25.9,,literature_mined,,,,RAW264.7,24.0
+CoO,CoO,71.8,21.6,13.0,,literature_mined,,,,BEAS-2B,24.0
+ZnO,ZnO,22.6,28.8,47.4,,literature_mined,,,,RAW264.7,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,BEAS-2B,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,BEAS-2B,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,RAW264.7,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,RAW264.7,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,RAW264.7,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,RAW264.7,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,RAW264.7,24.0
+NiO,NiO,13.1,27.6,68.7,,literature_mined,,,,BEAS-2B,24.0
+Sb2O3,Sb2O3,11.8,-35.3,93.6,,literature_mined,,,,BEAS-2B,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,BEAS-2B,24.0
+CoO,CoO,71.8,21.6,13.0,,literature_mined,,,,RAW264.7,24.0
+CoO,CoO,71.8,21.6,13.0,,literature_mined,,,,BEAS-2B,24.0
+CuO,CuO,12.8,7.6,74.2,,literature_mined,,,,RAW264.7,24.0
+ZnO,ZnO,22.6,28.8,47.4,,literature_mined,,,,BEAS-2B,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,BEAS-2B,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,RAW264.7,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,RAW264.7,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,RAW264.7,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,RAW264.7,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,BEAS-2B,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,BEAS-2B,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,BEAS-2B,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,RAW264.7,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,BEAS-2B,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,BEAS-2B,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,BEAS-2B,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,BEAS-2B,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,BEAS-2B,24.0
+Mn2O3,Mn2O3,51.5,-46.1,25.9,,literature_mined,,,,RAW264.7,24.0
+NiO,NiO,13.1,27.6,68.7,,literature_mined,,,,RAW264.7,24.0
+Sb2O3,Sb2O3,11.8,-35.3,93.6,,literature_mined,,,,BEAS-2B,24.0
+Sb2O3,Sb2O3,11.8,-35.3,93.6,,literature_mined,,,,RAW264.7,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,RAW264.7,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,RAW264.7,24.0
+ZnO,ZnO,22.6,28.8,47.4,,literature_mined,,,,BEAS-2B,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,BEAS-2B,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,BEAS-2B,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,RAW264.7,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,BEAS-2B,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,BEAS-2B,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,RAW264.7,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,BEAS-2B,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,BEAS-2B,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,RAW264.7,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,RAW264.7,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,RAW264.7,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,BEAS-2B,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,RAW264.7,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,RAW264.7,24.0
+NiO,NiO,13.1,27.6,68.7,,literature_mined,,,,BEAS-2B,24.0
+NiO,NiO,13.1,27.6,68.7,,literature_mined,,,,BEAS-2B,24.0
+Sb2O3,Sb2O3,11.8,-35.3,93.6,,literature_mined,,,,BEAS-2B,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,RAW264.7,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,RAW264.7,24.0
+Mn2O3,Mn2O3,51.5,-46.1,25.9,,literature_mined,,,,RAW264.7,24.0
+CoO,CoO,71.8,21.6,13.0,,literature_mined,,,,BEAS-2B,24.0
+ZnO,ZnO,22.6,28.8,47.4,,literature_mined,,,,RAW264.7,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,BEAS-2B,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,RAW264.7,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,RAW264.7,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,RAW264.7,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,BEAS-2B,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,RAW264.7,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,RAW264.7,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,RAW264.7,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,RAW264.7,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,RAW264.7,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,RAW264.7,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,RAW264.7,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,BEAS-2B,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,RAW264.7,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,RAW264.7,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,RAW264.7,24.0
+NiO,NiO,13.1,27.6,68.7,,literature_mined,,,,BEAS-2B,24.0
+NiO,NiO,13.1,27.6,68.7,,literature_mined,,,,RAW264.7,24.0
+NiO,NiO,13.1,27.6,68.7,,literature_mined,,,,RAW264.7,24.0
+NiO,NiO,13.1,27.6,68.7,,literature_mined,,,,RAW264.7,24.0
+Sb2O3,Sb2O3,11.8,-35.3,93.6,,literature_mined,,,,RAW264.7,24.0
+Sb2O3,Sb2O3,11.8,-35.3,93.6,,literature_mined,,,,RAW264.7,24.0
+CoO,CoO,71.8,21.6,13.0,,literature_mined,,,,RAW264.7,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,BEAS-2B,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,RAW264.7,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,BEAS-2B,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,RAW264.7,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,BEAS-2B,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,BEAS-2B,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,RAW264.7,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,RAW264.7,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,BEAS-2B,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,BEAS-2B,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,BEAS-2B,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,RAW264.7,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,RAW264.7,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,RAW264.7,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,RAW264.7,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,BEAS-2B,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,BEAS-2B,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,RAW264.7,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,RAW264.7,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,BEAS-2B,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,BEAS-2B,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,BEAS-2B,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,RAW264.7,24.0
+NiO,NiO,13.1,27.6,68.7,,literature_mined,,,,RAW264.7,24.0
+NiO,NiO,13.1,27.6,68.7,,literature_mined,,,,RAW264.7,24.0
+Sb2O3,Sb2O3,11.8,-35.3,93.6,,literature_mined,,,,RAW264.7,24.0
+Sb2O3,Sb2O3,11.8,-35.3,93.6,,literature_mined,,,,RAW264.7,24.0
+Sb2O3,Sb2O3,11.8,-35.3,93.6,,literature_mined,,,,RAW264.7,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,BEAS-2B,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,BEAS-2B,24.0
+CuO,CuO,12.8,7.6,74.2,,literature_mined,,,,BEAS-2B,24.0
+CoO,CoO,71.8,21.6,13.0,,literature_mined,,,,RAW264.7,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,BEAS-2B,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,RAW264.7,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,RAW264.7,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,RAW264.7,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,BEAS-2B,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,BEAS-2B,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,BEAS-2B,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,RAW264.7,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,BEAS-2B,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,BEAS-2B,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,BEAS-2B,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,BEAS-2B,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,BEAS-2B,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,RAW264.7,24.0
+NiO,NiO,13.1,27.6,68.7,,literature_mined,,,,RAW264.7,24.0
+Sb2O3,Sb2O3,11.8,-35.3,93.6,,literature_mined,,,,BEAS-2B,24.0
+Sb2O3,Sb2O3,11.8,-35.3,93.6,,literature_mined,,,,BEAS-2B,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,BEAS-2B,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,BEAS-2B,24.0
+CoO,CoO,71.8,21.6,13.0,,literature_mined,,,,RAW264.7,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,BEAS-2B,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,RAW264.7,24.0
+CeO2,CeO2,18.3,21.4,44.0,,literature_mined,,,,RAW264.7,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,BEAS-2B,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,BEAS-2B,24.0
+Fe2O3,Fe2O3,12.3,-2.1,93.1,,literature_mined,,,,BEAS-2B,24.0
+Gd2O3,Gd2O3,43.8,6.5,40.0,,literature_mined,,,,RAW264.7,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,BEAS-2B,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,RAW264.7,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,BEAS-2B,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,BEAS-2B,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,RAW264.7,24.0
+NiO,NiO,13.1,27.6,68.7,,literature_mined,,,,BEAS-2B,24.0
+Sb2O3,Sb2O3,11.8,-35.3,93.6,,literature_mined,,,,BEAS-2B,24.0
+Sb2O3,Sb2O3,11.8,-35.3,93.6,,literature_mined,,,,BEAS-2B,24.0
+SiO2,SiO2,13.5,-31.8,640.0,,literature_mined,,,,RAW264.7,24.0
+Al2O3,Al2O3,14.7,0.0,101.4,,literature_mined,,,,BEAS-2B,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,BEAS-2B,24.0
+HfO2,HfO2,28.4,33.5,21.8,,literature_mined,,,,RAW264.7,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,BEAS-2B,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,BEAS-2B,24.0
+In2O3,In2O3,59.6,61.9,14.0,,literature_mined,,,,RAW264.7,24.0
+La2O3,La2O3,24.6,54.3,30.0,,literature_mined,,,,BEAS-2B,24.0
+NiO,NiO,13.1,27.6,68.7,,literature_mined,,,,BEAS-2B,24.0
+NiO,NiO,13.1,27.6,68.7,,literature_mined,,,,RAW264.7,24.0
+NiO,NiO,13.1,27.6,68.7,,literature_mined,,,,RAW264.7,24.0
+Sb2O3,Sb2O3,11.8,-35.3,93.6,,literature_mined,,,,BEAS-2B,24.0
+Sb2O3,Sb2O3,11.8,-35.3,93.6,,literature_mined,,,,BEAS-2B,24.0
+ZnO,ZnO,22.6,28.8,47.4,,literature_mined,,,,RAW264.7,24.0
+Al2O3,Al2O3,14.7,0.0,,,literature_mined,,,,,
+Al2O3,Al2O3,12.6,0.0,,,literature_mined,,,,,
+Al2O3,Al2O3,15.1,0.0,,,literature_mined,,,,,
+Fe2O3,Fe2O3,12.3,-2.1,,,literature_mined,,,,,
+Fe2O3,Fe2O3,14.3,-2.1,,,literature_mined,,,,,
+Fe2O3,Fe2O3,14.0,-2.1,,,literature_mined,,,,,
+Cr2O3,Cr2O3,193.0,5.7,,,literature_mined,,,,,
+Cr2O3,Cr2O3,213.0,5.7,,,literature_mined,,,,,
+Bi2O3,Bi2O3,149.0,-2.3,,,literature_mined,,,,,
+Bi2O3,Bi2O3,166.0,-2.3,,,literature_mined,,,,,
+La2O3,La2O3,24.6,54.3,,,literature_mined,,,,,
+La2O3,La2O3,22.3,54.3,,,literature_mined,,,,,
+La2O3,La2O3,31.4,54.3,,,literature_mined,,,,,
+Y2O3,Y2O3,38.0,9.0,,,literature_mined,,,,,
+Y2O3,Y2O3,47.2,9.0,,,literature_mined,,,,,
+V2O3,V2O3,41.0,-43.7,,,literature_mined,,,,,
+Sb2O3,Sb2O3,11.8,-35.3,,,literature_mined,,,,,
+Sb2O3,Sb2O3,15.2,-35.3,,,literature_mined,,,,,
+In2O3,In2O3,59.6,61.9,,,literature_mined,,,,,
+In2O3,In2O3,63.2,61.9,,,literature_mined,,,,,
+TiO2,TiO2,25.0,-9.6,,,literature_mined,,,,,
+TiO2,TiO2,43.8,-9.6,,,literature_mined,,,,,
+SnO2,SnO2,40.0,-30.3,,,literature_mined,,,,,
+SnO2,SnO2,47.0,-30.3,,,literature_mined,,,,,
+SiO2,SiO2,13.5,-31.8,,,literature_mined,,,,,
+SiO2,SiO2,15.7,-31.8,,,literature_mined,,,,,
+SiO2,SiO2,23.1,-31.8,,,literature_mined,,,,,
+ZrO2,ZrO2,31.9,-18.1,,,literature_mined,,,,,
+CoO,CoO,71.8,21.6,,,literature_mined,,,,,
+CuO,CuO,12.8,7.6,,,literature_mined,,,,,
+CuO,CuO,11.1,7.6,,,literature_mined,,,,,
+CuO,CuO,14.3,7.6,,,literature_mined,,,,,
+NiO,NiO,13.1,27.6,,,literature_mined,,,,,
+NiO,NiO,10.8,27.6,,,literature_mined,,,,,
+ZnO,ZnO,22.6,28.8,,,literature_mined,,,,,
+ZnO,ZnO,21.8,28.8,,,literature_mined,,,,,
+ZnO,ZnO,25.3,28.8,,,literature_mined,,,,,
+CeO2,CeO2,18.3,21.4,,,literature_mined,,,,,
+CeO2,CeO2,26.8,21.4,,,literature_mined,,,,,
+Co3O4,Co3O4,10.0,7.3,,,literature_mined,,,,,
+Fe3O4,Fe3O4,43.8,6.5,,,literature_mined,,,,,
+Gd2O3,Gd2O3,63.0,23.5,,,literature_mined,,,,,
+Gd2O3,Gd2O3,43.8,23.5,,,literature_mined,,,,,
+Gd2O3,Gd2O3,61.0,23.5,,,literature_mined,,,,,
+HfO2,HfO2,28.4,33.5,,,literature_mined,,,,,
+HfO2,HfO2,33.2,33.5,,,literature_mined,,,,,
+Mn2O3,Mn2O3,51.5,-46.1,,,literature_mined,,,,,
+Mn2O3,Mn2O3,52.7,-46.1,,,literature_mined,,,,,
+Mn2O3,Mn2O3,56.3,-46.1,,,literature_mined,,,,,
+Ni2O3,Ni2O3,140.6,-2.33,,,literature_mined,,,,,
+Ni2O3,Ni2O3,165.8,-2.33,,,literature_mined,,,,,
+WO3,WO3,40.0,-9.13,,,literature_mined,,,,,
+WO3,WO3,46.0,-9.13,,,literature_mined,,,,,
+Yb2O3,Yb2O3,12.0,12.26,,,literature_mined,,,,,
+Ag (JRC NM-300K) pristine,Ag,21.097,,,,literature_mined,,,,HepaRG,
+Ag (JRC NM-300K) pristine,Ag,21.097,,,,literature_mined,,,,HepaRG,
+Ag (JRC NM-300K) pristine,Ag,21.097,,,,literature_mined,,,,HepaRG,
+Ag (JRC NM-300K) pristine,Ag,21.097,,,,literature_mined,,,,HepaRG,
+Ag (JRC NM-300K) pristine,Ag,21.097,,,,literature_mined,,,,HepaRG,
+Ag (JRC NM-300K) pristine,Ag,21.097,,,,literature_mined,,,,HepaRG,
+Ag (JRC NM-300K) pristine,Ag,21.097,,,,literature_mined,,,,HepaRG,
+Ag (JRC NM-300K) pristine,Ag,21.097,,,,literature_mined,,,,HepaRG,
+Ag (JRC NM-300K) pristine,Ag,21.097,,,,literature_mined,,,,HepaRG,
+Ag (JRC NM-300K) pristine,Ag,21.097,,,,literature_mined,,,,HepaRG,
+AgPURE_15nm,Ag,19.0,,,,literature_mined,,,,HepaRG,
+AgPURE_15nm,Ag,19.0,,,,literature_mined,,,,HepaRG,
+AgPURE_15nm,Ag,19.0,,,,literature_mined,,,,HepaRG,
+AgPURE_15nm,Ag,19.0,,,,literature_mined,,,,HepaRG,
+AgPURE_15nm,Ag,19.0,,,,literature_mined,,,,HepaRG,
+AgPURE_15nm,Ag,19.0,,,,literature_mined,,,,HepaRG,
+AgPURE_15nm,Ag,19.0,,,,literature_mined,,,,HepaRG,
+AgPURE_15nm,Ag,19.0,,,,literature_mined,,,,HepaRG,
+AgPURE_15nm,Ag,19.0,,,,literature_mined,,,,HepaRG,
+AgPURE_15nm,Ag,19.0,,,,literature_mined,,,,HepaRG,
+TiO2 uncoated (PROM),TiO2,9.95,,,,literature_mined,,,,HepaRG,
+TiO2 uncoated (PROM),TiO2,9.95,,,,literature_mined,,,,HepaRG,
+TiO2 uncoated (PROM),TiO2,9.95,,,,literature_mined,,,,HepaRG,
+TiO2 uncoated (PROM),TiO2,9.95,,,,literature_mined,,,,HepaRG,
+TiO2 uncoated (PROM),TiO2,9.95,,,,literature_mined,,,,HepaRG,
+TiO2 uncoated (PROM),TiO2,9.95,,,,literature_mined,,,,HepaRG,
+TiO2 uncoated (PROM),TiO2,9.95,,,,literature_mined,,,,HepaRG,
+TiO2 uncoated (PROM),TiO2,9.95,,,,literature_mined,,,,HepaRG,
+TiO2 uncoated (PROM),TiO2,9.95,,,,literature_mined,,,,HepaRG,
+TiO2 uncoated (PROM),TiO2,9.95,,,,literature_mined,,,,HepaRG,
+TiO2-PVP pristine (PROM),TiO2,11.651376862629826,,,,literature_mined,,,,HepaRG,
+TiO2-PVP pristine (PROM),TiO2,11.651376862629826,,,,literature_mined,,,,HepaRG,
+TiO2-PVP pristine (PROM),TiO2,11.651376862629826,,,,literature_mined,,,,HepaRG,
+TiO2-PVP pristine (PROM),TiO2,11.651376862629826,,,,literature_mined,,,,HepaRG,
+TiO2-PVP pristine (PROM),TiO2,11.651376862629826,,,,literature_mined,,,,HepaRG,
+TiO2-PVP pristine (PROM),TiO2,11.651376862629826,,,,literature_mined,,,,HepaRG,
+TiO2-PVP pristine (PROM),TiO2,11.651376862629826,,,,literature_mined,,,,HepaRG,
+TiO2-PVP pristine (PROM),TiO2,11.651376862629826,,,,literature_mined,,,,HepaRG,
+TiO2-PVP pristine (PROM),TiO2,11.651376862629826,,,,literature_mined,,,,HepaRG,
+TiO2-PVP pristine (PROM),TiO2,11.651376862629826,,,,literature_mined,,,,HepaRG,
+TiO2-F127 (PROM) ,TiO2,13.32061045726855,,,,literature_mined,,,,HepaRG,
+TiO2-F127 (PROM) ,TiO2,13.32061045726855,,,,literature_mined,,,,HepaRG,
+TiO2-F127 (PROM) ,TiO2,13.32061045726855,,,,literature_mined,,,,HepaRG,
+TiO2-F127 (PROM) ,TiO2,13.32061045726855,,,,literature_mined,,,,HepaRG,
+TiO2-F127 (PROM) ,TiO2,13.32061045726855,,,,literature_mined,,,,HepaRG,
+TiO2-F127 (PROM) ,TiO2,13.32061045726855,,,,literature_mined,,,,HepaRG,
+TiO2-F127 (PROM) ,TiO2,13.32061045726855,,,,literature_mined,,,,HepaRG,
+TiO2-F127 (PROM) ,TiO2,13.32061045726855,,,,literature_mined,,,,HepaRG,
+TiO2-F127 (PROM) ,TiO2,13.32061045726855,,,,literature_mined,,,,HepaRG,
+TiO2-F127 (PROM) ,TiO2,13.32061045726855,,,,literature_mined,,,,HepaRG,
+TiO2 AA4040 (PROM),TiO2,13.23671008034118,,,,literature_mined,,,,HepaRG,
+TiO2 AA4040 (PROM),TiO2,13.23671008034118,,,,literature_mined,,,,HepaRG,
+TiO2 AA4040 (PROM),TiO2,13.23671008034118,,,,literature_mined,,,,HepaRG,
+TiO2 AA4040 (PROM),TiO2,13.23671008034118,,,,literature_mined,,,,HepaRG,
+TiO2 AA4040 (PROM),TiO2,13.23671008034118,,,,literature_mined,,,,HepaRG,
+TiO2 AA4040 (PROM),TiO2,13.23671008034118,,,,literature_mined,,,,HepaRG,
+TiO2 AA4040 (PROM),TiO2,13.23671008034118,,,,literature_mined,,,,HepaRG,
+TiO2 AA4040 (PROM),TiO2,13.23671008034118,,,,literature_mined,,,,HepaRG,
+TiO2 AA4040 (PROM),TiO2,13.23671008034118,,,,literature_mined,,,,HepaRG,
+TiO2 AA4040 (PROM),TiO2,13.23671008034118,,,,literature_mined,,,,HepaRG,
+TiO2 (JRC NM-103),TiO2,40.7,,,,literature_mined,,,,HepaRG,
+TiO2 (JRC NM-103),TiO2,40.7,,,,literature_mined,,,,HepaRG,
+TiO2 (JRC NM-103),TiO2,40.7,,,,literature_mined,,,,HepaRG,
+TiO2 (JRC NM-103),TiO2,40.7,,,,literature_mined,,,,HepaRG,
+TiO2 (JRC NM-103),TiO2,40.7,,,,literature_mined,,,,HepaRG,
+TiO2 (JRC NM-103),TiO2,40.7,,,,literature_mined,,,,HepaRG,
+TiO2 (JRC NM-103),TiO2,40.7,,,,literature_mined,,,,HepaRG,
+TiO2 (JRC NM-103),TiO2,40.7,,,,literature_mined,,,,HepaRG,
+TiO2 (JRC NM-103),TiO2,40.7,,,,literature_mined,,,,HepaRG,
+TiO2 (JRC NM-103),TiO2,40.7,,,,literature_mined,,,,HepaRG,
+TiO2 (JRC NM-104),TiO2,42.5,,,,literature_mined,,,,HepaRG,
+TiO2 (JRC NM-104),TiO2,42.5,,,,literature_mined,,,,HepaRG,
+TiO2 (JRC NM-104),TiO2,42.5,,,,literature_mined,,,,HepaRG,
+TiO2 (JRC NM-104),TiO2,42.5,,,,literature_mined,,,,HepaRG,
+TiO2 (JRC NM-104),TiO2,42.5,,,,literature_mined,,,,HepaRG,
+TiO2 (JRC NM-104),TiO2,42.5,,,,literature_mined,,,,HepaRG,
+TiO2 (JRC NM-104),TiO2,42.5,,,,literature_mined,,,,HepaRG,
+TiO2 (JRC NM-104),TiO2,42.5,,,,literature_mined,,,,HepaRG,
+TiO2 (JRC NM-104),TiO2,42.5,,,,literature_mined,,,,HepaRG,
+TiO2 (JRC NM-104),TiO2,42.5,,,,literature_mined,,,,HepaRG,
+TiO2D540 10 nm (PROM),TiO2,9.5,,,,literature_mined,,,,HepaRG,
+TiO2D540 10 nm (PROM),TiO2,9.5,,,,literature_mined,,,,HepaRG,
+TiO2D540 10 nm (PROM),TiO2,9.5,,,,literature_mined,,,,HepaRG,
+TiO2D540 10 nm (PROM),TiO2,9.5,,,,literature_mined,,,,HepaRG,
+TiO2D540 10 nm (PROM),TiO2,9.5,,,,literature_mined,,,,HepaRG,
+TiO2D540 10 nm (PROM),TiO2,9.5,,,,literature_mined,,,,HepaRG,
+TiO2D540 10 nm (PROM),TiO2,9.5,,,,literature_mined,,,,HepaRG,
+TiO2D540 10 nm (PROM),TiO2,9.5,,,,literature_mined,,,,HepaRG,
+TiO2D540 10 nm (PROM),TiO2,9.5,,,,literature_mined,,,,HepaRG,
+TiO2D540 10 nm (PROM),TiO2,9.5,,,,literature_mined,,,,HepaRG,
+CuO_CuO360 (UoB),CuO,12.144,,,,literature_mined,,,,HepaRG,
+CuO_CuO360 (UoB),CuO,12.144,,,,literature_mined,,,,HepaRG,
+CuO_CuO360 (UoB),CuO,12.144,,,,literature_mined,,,,HepaRG,
+CuO_CuO360 (UoB),CuO,12.144,,,,literature_mined,,,,HepaRG,
+CuO_CuO360 (UoB),CuO,12.144,,,,literature_mined,,,,HepaRG,
+CuO_CuO360 (UoB),CuO,12.144,,,,literature_mined,,,,HepaRG,
+CuO_CuO360 (UoB),CuO,12.144,,,,literature_mined,,,,HepaRG,
+CuO_CuO360 (UoB),CuO,12.144,,,,literature_mined,,,,HepaRG,
+CuO_CuO360 (UoB),CuO,12.144,,,,literature_mined,,,,HepaRG,
+CuO_CuO360 (UoB),CuO,12.144,,,,literature_mined,,,,HepaRG,
+CuO_CuO10 (UoB),CuO,5.95,,,,literature_mined,,,,HepaRG,
+CuO_CuO10 (UoB),CuO,5.95,,,,literature_mined,,,,HepaRG,
+CuO_CuO10 (UoB),CuO,5.95,,,,literature_mined,,,,HepaRG,
+CuO_CuO10 (UoB),CuO,5.95,,,,literature_mined,,,,HepaRG,
+CuO_CuO10 (UoB),CuO,5.95,,,,literature_mined,,,,HepaRG,
+CuO_CuO10 (UoB),CuO,5.95,,,,literature_mined,,,,HepaRG,
+CuO_CuO10 (UoB),CuO,5.95,,,,literature_mined,,,,HepaRG,
+CuO_CuO10 (UoB),CuO,5.95,,,,literature_mined,,,,HepaRG,
+CuO_CuO10 (UoB),CuO,5.95,,,,literature_mined,,,,HepaRG,
+CuO_CuO10 (UoB),CuO,5.95,,,,literature_mined,,,,HepaRG,
+Fe5C2/Fe3O4,Fe5C2_Fe3O4,19.0,,,DSPE-PEG-COOH,literature_mined,10.1002/smll.201303263,,,,
+Fe5C2/Fe3O4,Fe5C2_Fe3O4,19.0,,,DSPE-PEG-COOH,literature_mined,10.1002/smll.201303263,,,,
+Fe5C2/Fe3O4,Fe5C2_Fe3O4,19.0,,,DSPE-PEG-COOH,literature_mined,10.1002/smll.201303263,,,,
+Fe5C2/Fe3O4,Fe5C2_Fe3O4,19.0,,,DSPE-PEG-COOH,literature_mined,10.1002/smll.201303263,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,Zher2:342,literature_mined,10.1002/adma.201305811,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,Zher2:342,literature_mined,10.1002/adma.201305811,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,Zher2:342,literature_mined,10.1002/adma.201305811,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,Zher2:342,literature_mined,10.1002/adma.201305811,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,Zher2:342,literature_mined,10.1002/adma.201305811,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,Zher2:342,literature_mined,10.1002/adma.201305811,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,Zher2:342,literature_mined,10.1002/adma.201305811,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,Zher2:342,literature_mined,10.1002/adma.201305811,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,Zher2:342,literature_mined,10.1002/adma.201305811,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,Zher2:342,literature_mined,10.1002/adma.201305811,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,Zher2:342,literature_mined,10.1002/adma.201305811,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,Zher2:342,literature_mined,10.1002/adma.201305811,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,Zher2:342,literature_mined,10.1002/adma.201305811,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,Zher2:342,literature_mined,10.1002/adma.201305811,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,Zher2:342,literature_mined,10.1002/adma.201305811,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,Zher2:342,literature_mined,10.1002/adma.201305811,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,Zher2:342,literature_mined,10.1002/adma.201305811,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,Zher2:342,literature_mined,10.1002/adma.201305811,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,Zher2:342,literature_mined,10.1002/adma.201305811,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,Zher2:342,literature_mined,10.1002/adma.201305811,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,Zher2:342,literature_mined,10.1002/adma.201305811,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.3,,,Sodium Tartrate,literature_mined,10.1039/C3NR04691E,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.3,,,Sodium Tartrate,literature_mined,10.1039/C3NR04691E,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.3,,,Sodium Tartrate,literature_mined,10.1039/C3NR04691E,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.3,,,Sodium Tartrate,literature_mined,10.1039/C3NR04691E,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.3,,,Sodium Tartrate,literature_mined,10.1039/C3NR04691E,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.3,,,Sodium Tartrate,literature_mined,10.1039/C3NR04691E,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.3,,,Sodium Tartrate,literature_mined,10.1039/C3NR04691E,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,BSA,literature_mined,10.1021/acsnano.5b04706,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,BSA,literature_mined,10.1021/acsnano.5b04706,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,BSA,literature_mined,10.1021/acsnano.5b04706,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,BSA,literature_mined,10.1021/acsnano.5b04706,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,BSA,literature_mined,10.1021/acsnano.5b04706,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,BSA,literature_mined,10.1021/acsnano.5b04706,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,BSA-DOX,literature_mined,10.1021/acsnano.5b04706,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,BSA-DOX,literature_mined,10.1021/acsnano.5b04706,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,BSA-DOX,literature_mined,10.1021/acsnano.5b04706,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,BSA-DOX,literature_mined,10.1021/acsnano.5b04706,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,BSA-DOX,literature_mined,10.1021/acsnano.5b04706,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,BSA-DOX,literature_mined,10.1021/acsnano.5b04706,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,BSA-DOX,literature_mined,10.1021/acsnano.5b04706,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,BSA-DOX,literature_mined,10.1021/acsnano.5b04706,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,BSA-DOX,literature_mined,10.1021/acsnano.5b04706,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,BSA-DOX,literature_mined,10.1021/acsnano.5b04706,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,BSA-DOX,literature_mined,10.1021/acsnano.5b04706,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,BSA-DOX,literature_mined,10.1021/acsnano.5b04706,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,BSA-DOX,literature_mined,10.1021/acsnano.5b04706,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,BSA-DOX,literature_mined,10.1021/acsnano.5b04706,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,BSA-DOX,literature_mined,10.1021/acsnano.5b04706,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,BSA-DOX,literature_mined,10.1021/acsnano.5b04706,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,BSA-DOX,literature_mined,10.1021/acsnano.5b04706,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,BSA-DOX,literature_mined,10.1021/acsnano.5b04706,,,,
+Fe2C/-,Fe2C_-,15.8,,,Protocatechuic Acid,literature_mined,10.1007/s12274-016-1375-4,,,,
+Fe2C/-,Fe2C_-,15.8,,,Protocatechuic Acid,literature_mined,10.1007/s12274-016-1375-4,,,,
+Fe2C/-,Fe2C_-,15.8,,,Protocatechuic Acid,literature_mined,10.1007/s12274-016-1375-4,,,,
+Fe2C/-,Fe2C_-,15.8,,,Protocatechuic Acid,literature_mined,10.1007/s12274-016-1375-4,,,,
+Fe2C/-,Fe2C_-,15.8,,,-,literature_mined,10.1007/s12274-016-1375-4,,,,
+Fe2C/-,Fe2C_-,15.8,,,-,literature_mined,10.1007/s12274-016-1375-4,,,,
+Fe2C/-,Fe2C_-,15.8,,,-,literature_mined,10.1007/s12274-016-1375-4,,,,
+Fe2C/-,Fe2C_-,15.8,,,-,literature_mined,10.1007/s12274-016-1375-4,,,,
+Fe2C/-,Fe2C_-,15.8,,,Protocatechuic Acid,literature_mined,10.1007/s12274-016-1375-4,,,,
+Fe2C/-,Fe2C_-,15.8,,,Protocatechuic Acid,literature_mined,10.1007/s12274-016-1375-4,,,,
+Fe2C/-,Fe2C_-,15.8,,,Protocatechuic Acid,literature_mined,10.1007/s12274-016-1375-4,,,,
+Fe2C/-,Fe2C_-,15.8,,,Protocatechuic Acid,literature_mined,10.1007/s12274-016-1375-4,,,,
+Fe2C/-,Fe2C_-,15.8,,,-,literature_mined,10.1007/s12274-016-1375-4,,,,
+Fe2C/-,Fe2C_-,15.8,,,-,literature_mined,10.1007/s12274-016-1375-4,,,,
+Fe2C/-,Fe2C_-,15.8,,,-,literature_mined,10.1007/s12274-016-1375-4,,,,
+Fe2C/-,Fe2C_-,15.8,,,-,literature_mined,10.1007/s12274-016-1375-4,,,,
+Fe5C2/SiO2,Fe5C2_SiO2,31.0,,,-,literature_mined,10.1088/2053-1591/aac3b7,,,,
+Fe5C2/SiO2,Fe5C2_SiO2,31.0,,,-,literature_mined,10.1088/2053-1591/aac3b7,,,,
+Fe5C2/SiO2,Fe5C2_SiO2,31.0,,,-,literature_mined,10.1088/2053-1591/aac3b7,,,,
+Fe5C2/SiO2,Fe5C2_SiO2,31.0,,,-,literature_mined,10.1088/2053-1591/aac3b7,,,,
+Fe5C2/SiO2,Fe5C2_SiO2,31.0,,,-,literature_mined,10.1088/2053-1591/aac3b7,,,,
+Fe5C2/SiO2,Fe5C2_SiO2,31.0,,,-,literature_mined,10.1088/2053-1591/aac3b7,,,,
+Fe5C2/SiO2,Fe5C2_SiO2,31.0,,,-,literature_mined,10.1088/2053-1591/aac3b7,,,,
+Fe5C2/SiO2,Fe5C2_SiO2,31.0,,,-,literature_mined,10.1088/2053-1591/aac3b7,,,,
+Fe5C2/SiO2,Fe5C2_SiO2,31.0,,,-,literature_mined,10.1088/2053-1591/aac3b7,,,,
+Fe5C2/SiO2,Fe5C2_SiO2,31.0,,,-,literature_mined,10.1088/2053-1591/aac3b7,,,,
+Fe5C2/MnO2,Fe5C2_MnO2,4.9,,,GOD,literature_mined,10.1021/acsnano.8b05042 ,,,,
+Fe5C2/MnO2,Fe5C2_MnO2,4.9,,,GOD,literature_mined,10.1021/acsnano.8b05042 ,,,,
+Fe5C2/MnO2,Fe5C2_MnO2,4.9,,,GOD,literature_mined,10.1021/acsnano.8b05042,,,,
+Fe5C2/MnO2,Fe5C2_MnO2,4.9,,,GOD,literature_mined,10.1021/acsnano.8b05042,,,,
+Fe5C2/MnO2,Fe5C2_MnO2,4.9,,,GOD,literature_mined,10.1021/acsnano.8b05042,,,,
+Fe5C2/MnO2,Fe5C2_MnO2,4.9,,,GOD,literature_mined,10.1021/acsnano.8b05042,,,,
+Fe5C2/MnO2,Fe5C2_MnO2,4.9,,,GOD,literature_mined,10.1021/acsnano.8b05042,,,,
+Fe5C2/MnO2,Fe5C2_MnO2,4.9,,,-,literature_mined,10.1021/acsnano.8b05042,,,,
+Fe5C2/MnO2,Fe5C2_MnO2,4.9,,,-,literature_mined,10.1021/acsnano.8b05042,,,,
+Fe5C2/MnO2,Fe5C2_MnO2,4.9,,,-,literature_mined,10.1021/acsnano.8b05042,,,,
+Fe5C2/MnO2,Fe5C2_MnO2,4.9,,,-,literature_mined,10.1021/acsnano.8b05042,,,,
+Fe5C2/MnO2,Fe5C2_MnO2,4.9,,,-,literature_mined,10.1021/acsnano.8b05042,,,,
+Fe5C2/MnO2,Fe5C2_MnO2,4.9,,,-,literature_mined,10.1021/acsnano.8b05042,,,,
+Fe5C2/MnO2,Fe5C2_MnO2,4.9,,,-,literature_mined,10.1021/acsnano.8b05042,,,,
+Fe2C/Fe3O4,Fe2C_Fe3O4,11.1,,,DOP-TEG-C6,literature_mined,10.1021/acsnano.8b05671,,,,
+Fe2C/Fe3O4,Fe2C_Fe3O4,11.1,,,DOP-TEG-C6,literature_mined,10.1021/acsnano.8b05671,,,,
+Fe2C/Fe3O4,Fe2C_Fe3O4,11.1,,,DOP-TEG-C6,literature_mined,10.1021/acsnano.8b05671,,,,
+Fe2C/Fe3O4,Fe2C_Fe3O4,11.1,,,DOP-TEG-C6,literature_mined,10.1021/acsnano.8b05671,,,,
+Fe2C/Fe3O4,Fe2C_Fe3O4,11.1,,,DOP-TEG-COOH,literature_mined,10.1021/acsnano.8b05671,,,,
+Fe2C/Fe3O4,Fe2C_Fe3O4,11.1,,,DOP-TEG-COOH,literature_mined,10.1021/acsnano.8b05671,,,,
+Fe2C/Fe3O4,Fe2C_Fe3O4,11.1,,,DOP-TEG-COOH,literature_mined,10.1021/acsnano.8b05671,,,,
+Fe2C/Fe3O4,Fe2C_Fe3O4,11.1,,,DOP-TEG-COOH,literature_mined,10.1021/acsnano.8b05671,,,,
+Fe2C/Fe3O4,Fe2C_Fe3O4,11.1,,,DOP-TEG-COOH,literature_mined,10.1021/acsnano.8b05671,,,,
+Fe2C/Fe3O4,Fe2C_Fe3O4,11.1,,,DOP-TEG-Zwitter,literature_mined,10.1021/acsnano.8b05671,,,,
+Fe2C/Fe3O4,Fe2C_Fe3O4,11.1,,,DOP-TEG-Zwitter,literature_mined,10.1021/acsnano.8b05671,,,,
+Fe2C/Fe3O4,Fe2C_Fe3O4,11.1,,,DOP-TEG-Zwitter,literature_mined,10.1021/acsnano.8b05671,,,,
+Fe2C/Fe3O4,Fe2C_Fe3O4,11.1,,,DOP-TEG-Zwitter,literature_mined,10.1021/acsnano.8b05671,,,,
+Fe2C/Fe3O4,Fe2C_Fe3O4,11.1,,,DOP-TEG-Zwitter,literature_mined,10.1021/acsnano.8b05671,,,,
+Fe5C2/Fe3O4,Fe5C2_Fe3O4,16.4,,,DSPE-PEG,literature_mined,10.1021/acsnano.9b01740,,,,
+Fe5C2/Fe3O4,Fe5C2_Fe3O4,16.4,,,DSPE-PEG,literature_mined,10.1021/acsnano.9b01740,,,,
+Fe5C2/Fe3O4,Fe5C2_Fe3O4,16.4,,,DSPE-PEG,literature_mined,10.1021/acsnano.9b01740,,,,
+Fe5C2/Fe3O4,Fe5C2_Fe3O4,16.4,,,DSPE-PEG,literature_mined,10.1021/acsnano.9b01740,,,,
+Fe5C2/Fe3O4,Fe5C2_Fe3O4,16.4,,,DSPE-PEG,literature_mined,10.1021/acsnano.9b01740,,,,
+Fe5C2/Fe3O4,Fe5C2_Fe3O4,16.4,,,DSPE-PEG,literature_mined,10.1021/acsnano.9b01740,,,,
+Fe5C2/Fe3O4,Fe5C2_Fe3O4,16.4,,,DSPE-PEG,literature_mined,10.1021/acsnano.9b01740,,,,
+Fe5C2/Fe3O4,Fe5C2_Fe3O4,16.4,,,DSPE-PEG,literature_mined,10.1021/acsnano.9b01740,,,,
+Fe5C2/Fe3O4,Fe5C2_Fe3O4,16.4,,,DSPE-PEG,literature_mined,10.1021/acsnano.9b01740,,,,
+Fe5C2/Fe3O4,Fe5C2_Fe3O4,16.4,,,DSPE-PEG,literature_mined,10.1021/acsnano.9b01740,,,,
+Fe5C2/Fe3O4,Fe5C2_Fe3O4,16.4,,,DSPE-PEG,literature_mined,10.1021/acsnano.9b01740,,,,
+Fe5C2/Fe3O4,Fe5C2_Fe3O4,16.4,,,DSPE-PEG,literature_mined,10.1021/acsnano.9b01740,,,,
+Fe5C2/Fe3O4,Fe5C2_Fe3O4,16.4,,,DSPE-PEG,literature_mined,10.1021/acsnano.9b01740,,,,
+Fe5C2/Fe3O4,Fe5C2_Fe3O4,16.4,,,DSPE-PEG,literature_mined,10.1021/acsnano.9b01740,,,,
+Fe5C2/Fe3O4,Fe5C2_Fe3O4,16.4,,,DSPE-PEG,literature_mined,10.1021/acsnano.9b01740,,,,
+Fe5C2/Fe3O4,Fe5C2_Fe3O4,16.4,,,DSPE-PEG,literature_mined,10.1021/acsnano.9b01740,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,DSPE-PEG,literature_mined,10.1021/acsnano.9b01740,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,DSPE-PEG,literature_mined,10.1021/acsnano.9b01740,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,DSPE-PEG,literature_mined,10.1021/acsnano.9b01740,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,DSPE-PEG,literature_mined,10.1021/acsnano.9b01740,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,DSPE-PEG,literature_mined,10.1021/acsnano.9b01740,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,DSPE-PEG,literature_mined,10.1021/acsnano.9b01740,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,DSPE-PEG,literature_mined,10.1021/acsnano.9b01740,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,DSPE-PEG,literature_mined,10.1021/acsnano.9b01740,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,DSPE-PEG,literature_mined,10.1021/acsnano.9b01740,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,DSPE-PEG,literature_mined,10.1021/acsnano.9b01740,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,DSPE-PEG,literature_mined,10.1021/acsnano.9b01740,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,DSPE-PEG,literature_mined,10.1021/acsnano.9b01740,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,DSPE-PEG,literature_mined,10.1021/acsnano.9b01740,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,DSPE-PEG,literature_mined,10.1021/acsnano.9b01740,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,DSPE-PEG,literature_mined,10.1021/acsnano.9b01740,,,,
+Fe5C2/Carbon,Fe5C2_Carbon,15.0,,,DSPE-PEG,literature_mined,10.1021/acsnano.9b01740,,,,
+Fe3C/-,Fe3C_-,6.3,,,Pluronic acid F127,literature_mined,10.1007/s10854-020-03628-9 ,,,,
+Fe3C/-,Fe3C_-,6.3,,,Pluronic acid F127,literature_mined,10.1007/s10854-020-03628-9 ,,,,
+Fe3C/-,Fe3C_-,6.3,,,Pluronic acid F127,literature_mined,10.1007/s10854-020-03628-9,,,,
+Fe3C/-,Fe3C_-,6.3,,,Pluronic acid F127,literature_mined,10.1007/s10854-020-03628-9,,,,
+Fe3C/-,Fe3C_-,6.3,,,Pluronic acid F127,literature_mined,10.1007/s10854-020-03628-9,,,,
+Fe3C/-,Fe3C_-,6.3,,,Pluronic acid F127,literature_mined,10.1007/s10854-020-03628-9,,,,
+Fe3C/-,Fe3C_-,6.3,,,Pluronic acid F127,literature_mined,10.1007/s10854-020-03628-9,,,,
+Fe3C/-,Fe3C_-,6.3,,,-,literature_mined,10.1007/s10854-020-03628-9,,,,
+Fe3C/-,Fe3C_-,6.3,,,-,literature_mined,10.1007/s10854-020-03628-9,,,,
+Fe3C/-,Fe3C_-,6.3,,,-,literature_mined,10.1007/s10854-020-03628-9,,,,
+Fe3C/-,Fe3C_-,6.3,,,-,literature_mined,10.1007/s10854-020-03628-9,,,,
+Fe3C/-,Fe3C_-,6.3,,,-,literature_mined,10.1007/s10854-020-03628-9,,,,
+Fe3C/-,Fe3C_-,6.3,,,-,literature_mined,10.1007/s10854-020-03628-9,,,,
+Fe3C/-,Fe3C_-,6.3,,,-,literature_mined,10.1007/s10854-020-03628-9,,,,
+Fe2C/Fe3O4,Fe2C_Fe3O4,14.0,,,DSPE-PEG,literature_mined,10.1039/D1RA04975E,,,,
+Fe2C/Fe3O4,Fe2C_Fe3O4,14.0,,,DSPE-PEG,literature_mined,10.1039/D1RA04975E,,,,
+Fe2C/Fe3O4,Fe2C_Fe3O4,14.0,,,DSPE-PEG,literature_mined,10.1039/D1RA04975E,,,,
+Fe2C/Fe3O4,Fe2C_Fe3O4,14.0,,,DSPE-PEG,literature_mined,10.1039/D1RA04975E,,,,
+Fe2C/Fe3O4,Fe2C_Fe3O4,14.0,,,DSPE-PEG,literature_mined,10.1039/D1RA04975E,,,,
+Fe2C/Fe3O4,Fe2C_Fe3O4,14.0,,,DSPE-PEG,literature_mined,10.1039/D1RA04975E,,,,
+Fe2C/Fe3O4,Fe2C_Fe3O4,14.0,,,DSPE-PEG,literature_mined,10.1039/D1RA04975E,,,,
+Fe2C/Fe3O4,Fe2C_Fe3O4,14.0,,,DSPE-PEG,literature_mined,10.1039/D1RA04975E,,,,
+Fe2C/Fe3O4,Fe2C_Fe3O4,14.0,,,DSPE-PEG,literature_mined,10.1039/D1RA04975E,,,,
+Fe2C/Fe3O4,Fe2C_Fe3O4,14.0,,,DSPE-PEG,literature_mined,10.1039/D1RA04975E,,,,
+Fe2C/Fe3O4,Fe2C_Fe3O4,14.0,,,DSPE-PEG,literature_mined,10.1039/D1RA04975E,,,,
+Fe2C/Fe3O4,Fe2C_Fe3O4,14.0,,,DSPE-PEG,literature_mined,10.1039/D1RA04975E,,,,
+Fe2C/Fe3O4,Fe2C_Fe3O4,14.0,,,DSPE-PEG,literature_mined,10.1039/D1RA04975E,,,,
+Fe2C/Fe3O4,Fe2C_Fe3O4,14.0,,,DSPE-PEG,literature_mined,10.1039/D1RA04975E,,,,
+Fe2C/Fe3O4,Fe2C_Fe3O4,14.0,,,DSPE-PEG,literature_mined,10.1039/D1RA04975E,,,,
+Fe2C/Fe3O4,Fe2C_Fe3O4,14.0,,,DSPE-PEG,literature_mined,10.1039/D1RA04975E,,,,
+Fe3C/Carbon,Fe3C_Carbon,44.3,,,Poly(acrylic acid),literature_mined,10.1016/j.jallcom.2023.172145 ,,,,
+Fe3C/Carbon,Fe3C_Carbon,44.3,,,Poly(acrylic acid),literature_mined,10.1016/j.jallcom.2023.172145 ,,,,
+Fe3C/Carbon,Fe3C_Carbon,44.3,,,Poly(acrylic acid),literature_mined,10.1016/j.jallcom.2023.172145,,,,
+Fe3C/Carbon,Fe3C_Carbon,44.3,,,Poly(acrylic acid),literature_mined,10.1016/j.jallcom.2023.172145,,,,
+Fe3C/Carbon,Fe3C_Carbon,44.3,,,Poly(acrylic acid),literature_mined,10.1016/j.jallcom.2023.172145,,,,
+Fe3C/Carbon,Fe3C_Carbon,44.3,,,Poly(acrylic acid),literature_mined,10.1016/j.jallcom.2023.172145,,,,
+Fe3C/Carbon,Fe3C_Carbon,44.3,,,Poly(acrylic acid),literature_mined,10.1016/j.jallcom.2023.172145,,,,
+Fe3C/Carbon,Fe3C_Carbon,44.3,,,Poly(acrylic acid),literature_mined,10.1016/j.jallcom.2023.172145,,,,
+Fe3C/Carbon,Fe3C_Carbon,44.3,,,Poly(acrylic acid),literature_mined,10.1016/j.jallcom.2023.172145,,,,
+Fe3C/Carbon,Fe3C_Carbon,44.3,,,Poly(acrylic acid),literature_mined,10.1016/j.jallcom.2023.172145,,,,
+Fe3C/Carbon,Fe3C_Carbon,44.3,,,Poly(acrylic acid),literature_mined,10.1016/j.jallcom.2023.172145,,,,
+Fe3C/Carbon,Fe3C_Carbon,44.3,,,Poly(acrylic acid),literature_mined,10.1016/j.jallcom.2023.172145,,,,
+Fe3C/Carbon,Fe3C_Carbon,44.3,,,Poly(acrylic acid),literature_mined,10.1016/j.jallcom.2023.172145,,,,
+Fe3C/Carbon,Fe3C_Carbon,44.3,,,Poly(acrylic acid),literature_mined,10.1016/j.jallcom.2023.172145,,,,

@@ -1,0 +1,184 @@
+name,material_type,core_size_nm,zeta_potential_mv,surface_area_m2g,coating,source_type,doi,ic50,ec50,cell_line,exposure_time_h,raw_classification
+Fe3O4,Mixture,,,,,literature_mined,,,,"Amphiascus tenuiremis, Marinobacter hydrocarbonoclasticus",,in vivo
+C60 fullerenes,Mixture,,,,,literature_mined,,,,Mytilus galloprovincialis,,in vivo
+Fe3O4,Mixture,,,,,literature_mined,,,,Anguilla anguilla,,in vitro
+C60 fullerenes,Mixture,,,,,literature_mined,,,,Danio rerio,,in vitro
+ZnO,Mixture,,,,,literature_mined,,,,Daphnia magna,,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Mytilus galloprovincialis,,in vitro
+C60 fullerenes,Mixture,,,,,literature_mined,,,,"Pseudokirchneriella subcapitata, Daphnia magna",,in vivo
+C60 fullerenes,Mixture,,,,,literature_mined,,,,Daphnia magna,,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Mytilus galloprovincialis,,in vitro
+MWCNT,Mixture,,,,,literature_mined,,,,"Pimephales promelas, Daphnia magna",,in vivo
+ZnO,Mixture,,,,,literature_mined,,,,Homosapien,,in vitro
+CNT,Mixture,,,,,literature_mined,,,,Spartina alterniflora,,in vivo
+"Ag, ZnO, TiO2",Mixture,,,,,literature_mined,,,,Medicago truncatula,,in vivo
+ZnO,Mixture,,,,,literature_mined,,,,Vibrio fischeri,,in vitro
+CeO2,Mixture,,,,,literature_mined,,,,Escherichia coli,,in vitro
+SWCNT,Mixture,,,,,literature_mined,,,,Mycobacterium vanbaalenii,,in vitro
+SWCNT,Mixture,,,,,literature_mined,,,,"Mus musculus, Homosapien",,in vitro
+TiO2; Al2O3,Mixture,,,,,literature_mined,,,,Scenedesmus obliquus,,in vivo
+Au,Mixture,,,,,literature_mined,,,,Tetraselmis chuii,,in vivo
+Ag,Mixture,,,,,literature_mined,,,,"Cucurbita pepo, Glycine max, Solanum lycopersicum",,in vivo
+"C60 fullerenes, MWCNT",Mixture,,,,,literature_mined,,,,"Cucurbita pepo, Glycine max, Solanum lycopersicum, Zea mays",,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Dicentrarchus labrax,,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Mytilus galloprovincialis,,"in vivo, in vitro"
+Au,Mixture,,,,,literature_mined,,,,Homosapien,,in vitro
+ZnO,Mixture,,,,,literature_mined,,,,Unio tumidus,,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Daphnia magna,,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Daphnia magna,,in vivo
+Nano-charcoal,Mixture,,,,,literature_mined,,,,Daphnia magna,,in vivo
+ZnO,Mixture,,,,,literature_mined,,,,Pseudomonas putida,,in vitro
+TiO2,Mixture,,,,,literature_mined,,,,Danio rerio,,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Mytilus edulis,,in vivo
+Ag,Mixture,,,,,literature_mined,,,,Scophthalmus maximus,,in vivo
+Ag,Mixture,,,,,literature_mined,,,,Trichoderma viride,,in vitro
+SWCNT,Mixture,,,,,literature_mined,,,,"Amphiascus tenuiremus, Streblospio benedicti",,in vivo
+C60 fullerenes,Mixture,,,,,literature_mined,,,,Danio rerio,,in vitro
+MWCNT,Mixture,,,,,literature_mined,,,,Ruditapes philippinarum,,in vivo
+Ag,Mixture,,,,,literature_mined,,,,"Phomaglomerata, Phoma herbarum, Fusarium semitectum, Trichoderm asp., Candida albicans",,in vitro
+MnO2; Hydroxyapatite,Mixture,,,,,literature_mined,,,,Daphnia magna,,in vivo
+Au,Mixture,,,,,literature_mined,,,,Danio rerio,,in vivo
+Ag,Mixture,,,,,literature_mined,,,,Mus musculus,,in vitro
+TiO2,Mixture,,,,,literature_mined,,,,Dunaliella salina,,in vivo
+CeO2,Mixture,,,,,literature_mined,,,,Daphnia magna,,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Pseudokirchneriella subcapitata,,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Daphnia magna,,in vivo
+MWCNT,Mixture,,,,,literature_mined,,,,Lactuca sativa L,,in vivo
+C60 fullerenes,Mixture,,,,,literature_mined,,,,Danio rerio,,in vivo
+C60 fullerenes,Mixture,,,,,literature_mined,,,,Danio rerio,,in vivo
+Cu,Mixture,,,,,literature_mined,,,,Poeciliopsis lucida,,in vitro
+ZnO,Mixture,,,,,literature_mined,,,,Oncorhynchus mykiss,,in vivo
+C60 fullerenes,Mixture,,,,,literature_mined,,,,Oryzias latipes,,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Danio rerio,,in vivo
+Al2O3; Fe2O3,Mixture,,,,,literature_mined,,,,Ceriodaphnia dubia,,in vivo
+CeO2; TiO2,Mixture,,,,,literature_mined,,,,Ceriodaphnia dubia,,in vivo
+MWCNT,Mixture,,,,,literature_mined,,,,Eisenia fetida,,in vivo
+Graphene oxide,Mixture,,,,,literature_mined,,,,Triticum aestivum L.,,in vivo
+MWCNT,Mixture,,,,,literature_mined,,,,Eisenia fetida,,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Danio rerio,,in vivo
+Ag,Mixture,,,,,literature_mined,,,,Chlamydomonas reinhardtii; Ochromonas danica,,in vivo
+TiO2 (Anatase),Mixture,,,,,literature_mined,,,,Chlorella sp,,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Mytilus galloprovincialis,,in vivo
+MWCNT,Mixture,,,,,literature_mined,,,,Lepidium sativum,,in vivo
+ZnO; CuO,Mixture,,,,,literature_mined,,,,Lepidium sativum,,in vivo
+ZnO,Mixture,,,,,literature_mined,,,,Medicago truncatula,,in vivo
+Ag,Mixture,,,,,literature_mined,,,,Medicago truncatula,,in vivo
+C60 fullerenes,Mixture,,,,,literature_mined,,,,Eisenia fetida,,in vivo
+MWCNT,Mixture,,,,,literature_mined,,,,Daphnia magna,,in vivo
+Cu,Mixture,,,,,literature_mined,,,,Daphnia magna,,in vivo
+CuO; NiO; ZnO; Fe2O3,Mixture,,,,,literature_mined,,,,Chlorella vulgaris,,in vivo
+BN,Mixture,,,,,literature_mined,,,,Homosapien,,in vitro
+CeO2,Mixture,,,,,literature_mined,,,,Danio rerio,,in vivo
+WC,Mixture,,,,,literature_mined,,,,Oncorhynchus mykiss,,in vivo
+ZnO,Mixture,,,,,literature_mined,,,,Eisenia fetida,,in vivo
+Graphene,Mixture,,,,,literature_mined,,,,Poeciliopsis lucida,,in vitro
+TiO2,Mixture,,,,,literature_mined,,,,Salmo trutta,,in vivo
+Ag,Mixture,,,,,literature_mined,,,,Escherichia coli,,in vitro
+Cu; ZnO,Mixture,,,,,literature_mined,,,,Lactuca sativa L,,in vivo
+Cu,Mixture,,,,,literature_mined,,,,Carassius auratus,,in vivo
+SiO2; TiO2,Mixture,,,,,literature_mined,,,,Scenedesmus obliquus,,in vivo
+Ag; ZnO,Mixture,,,,,literature_mined,,,,Daphnia magna,,in vivo
+Zeolite,Mixture,,,,,literature_mined,,,,Chironomus riparius,,in vivo
+Graphite-diamond,Mixture,,,,,literature_mined,,,,Daphnia magna,,in vivo
+C60 fullerenes,Mixture,,,,,literature_mined,,,,Cottonwood (Populus deltoids),,in vivo
+SWCNT,Mixture,,,,,literature_mined,,,,Strongylocentrotus droebachiensis,,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Clarias gariepinus,,in vivo
+Ag,Mixture,,,,,literature_mined,,,,Mus musculus,,in vivo
+Ag,Mixture,,,,,literature_mined,,,,Salmonella typhimurium,,in vitro
+ZnO,Mixture,,,,,literature_mined,,,,Scenedesmus obliquus,,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Danio rerio,,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Mus musculus,,in vitro
+TiO2,Mixture,,,,,literature_mined,,,,Mus musculus,,in vitro
+Fe3O4,Mixture,,,,,literature_mined,,,,Anguilla anguilla,,in vitro
+Ag,Mixture,,,,,literature_mined,,,,"Daphnia magna, Raphidocelis subcapitata, Vibrio ﬁscheri ",,in vivo
+Ag,Mixture,,,,,literature_mined,,,,Aspergillus flavus,,in vitro
+TiO2,Mixture,,,,,literature_mined,,,,Dicentrarchus labrax,,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Laeonereis acuta,,in vivo
+Ag,Mixture,,,,,literature_mined,,,,Clarias gariepinus,,in vivo
+C60 fullerenes,Mixture,,,,,literature_mined,,,,Artemia sp.,,in vivo
+C60 fullerenes,Mixture,,,,,literature_mined,,,,Danio rerio,,in vivo
+Ag,Mixture,,,,,literature_mined,,,,Danio rerio,,in vivo
+ZnO; TiO2,Mixture,,,,,literature_mined,,,,Daphnia magna,,in vivo
+Fe3O4,Mixture,,,,,literature_mined,,,,Daphnia magna,,in vivo
+Ag; TiO2,Mixture,,,,,literature_mined,,,,Danio rerio,,in vivo
+SWCNT; MWCNT,Mixture,,,,,literature_mined,,,,Eisenia fetida,,in vivo
+ZnO,Mixture,,,,,literature_mined,,,,Caenorhabditis elegans,,in vivo
+Au,Mixture,,,,,literature_mined,,,,Shewanella oneidensis; Bacillus subtilis,,in vitro
+MWCNT,Mixture,,,,,literature_mined,,,,Carassius auratus,,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Mytilus galloprovincialis,,in vivo
+ZnO,Mixture,,,,,literature_mined,,,,Colletotrichum gloeosporioides,,in vitro
+TiO2,Mixture,,,,,literature_mined,,,,Daphnia magna,,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Daphnia magna,,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Gammarus fossarum,,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Hoplias malabaricus,,in vivo
+C60 fullerenes,Mixture,,,,,literature_mined,,,,Daphnia magna; Vibrio fischeri,,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Escherichia coli,,in vitro
+C60 fullerenes,Mixture,,,,,literature_mined,,,,Homosapien,,in vitro
+MWCNT,Mixture,,,,,literature_mined,,,,Chlorella vulgaris,,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Daphnia magna,,in vivo
+TiO2 (Anatase),Mixture,,,,,literature_mined,,,,Oncorhynchus mykiss,,in vitro
+MWCNT,Mixture,,,,,literature_mined,,,,Mus musculus,,in vitro
+Ag,Mixture,,,,,literature_mined,,,,"Staphylococcus aureus, Escherichia coli",,in vitro
+MWCNT,Mixture,,,,,literature_mined,,,,Chironomus plumosus,,in vivo
+MWCNT,Mixture,,,,,literature_mined,,,,Chironomus plumosus,,in vivo
+MWCNT,Mixture,,,,,literature_mined,,,,Alfalfa rhizosphere,,in vivo
+Ag,Mixture,,,,,literature_mined,,,,Escherichia coli,,in vitro
+Fe3O4,Mixture,,,,,literature_mined,,,,Anguilla anguilla,,in vitro
+ZnO,Mixture,,,,,literature_mined,,,,Escherichia coli,,in vitro
+SWCNT,Mixture,,,,,literature_mined,,,,Oryzias latipes,,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Cyprinus carpio,,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Cyprinus carpio,,in vivo
+MWCNT,Mixture,,,,,literature_mined,,,,Carassius auratus red var,,in vivo
+Al2O3,Mixture,,,,,literature_mined,,,,Vibrio fischeri; Rhinella arenarum,,in vitro
+TiO2,Mixture,,,,,literature_mined,,,,Daphnia magna,,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Daphnia magna,,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Anabaena sp,,in vitro
+C60 fullerenes,Mixture,,,,,literature_mined,,,,Daphnia magna,,in vivo
+Au,Mixture,,,,,literature_mined,,,,Mytilus edulis,,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Scapharca subcrenata,,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Daphnia magna,,in vivo
+ZnO,Mixture,,,,,literature_mined,,,,Aeromonas hydrophila; Escherichia coli,,in vitro
+CeO2,Mixture,,,,,literature_mined,,,,Porcellionides pruinosus,,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Mus musculus,,in vitro
+TiO2,Mixture,,,,,literature_mined,,,,Corbicula fluminea,,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Dicentrarchus labrax,,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,"Daphnia magna, Phaeodactylum tricornutum",,in vivo
+Ag,Mixture,,,,,literature_mined,,,,Potamopyrgus antipodarum,,in vivo
+Al2O3,Mixture,,,,,literature_mined,,,,Ceriodaphnia dubia,,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Ceriodaphnia dubia,,in vivo
+MWCNT,Mixture,,,,,literature_mined,,,,Daphnia magna,,in vivo
+ZnO,Mixture,,,,,literature_mined,,,,"Homosapien, mus musculus",,in vitro
+MWCNT,Mixture,,,,,literature_mined,,,,Vicia faba L.,,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Danio rerio,,in vivo
+TiO2; CeO2,Mixture,,,,,literature_mined,,,,Oryza sativa,,in vivo
+TiO2; CeO2,Mixture,,,,,literature_mined,,,,Chlorella pyrenoidosa,,in vivo
+"MWCNTs, SWCNTs",Mixture,,,,,literature_mined,,,,Daphnia magna,,in vivo
+Graphene,Mixture,,,,,literature_mined,,,,Scenedesmus obliquus,,in vivo
+MWCNT,Mixture,,,,,literature_mined,,,,Triticum L.,,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Escherichia coli,,in vitro
+QDs,Mixture,,,,,literature_mined,,,,Chlamydomonas reinhardtii,,in vivo
+MWCNT,Mixture,,,,,literature_mined,,,,Agrobacterium,,in vitro
+MWCNT,Mixture,,,,,literature_mined,,,,Chironomus plumosus,,in vivo
+C60 fullerenes,Mixture,,,,,literature_mined,,,,"Daphnia magna, medaka embryos",,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Danio rerio,,in vivo
+MWCNT,Mixture,,,,,literature_mined,,,,Danio rerio,,in vivo
+C60 fullerenes,Mixture,,,,,literature_mined,,,,Daphnia magna,,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Chlamydomonas reinhardtii ,,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Chlamydomonas reinhardtii,,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Tetrahymena thermophile,,in vitro
+ZnO,Mixture,,,,,literature_mined,,,,Scenedesmus obliquus,,in vivo
+ZnO,Mixture,,,,,literature_mined,,,,Scenedesmus obliquus; Danio rerio; Daphnia magna,,in vivo
+ZnO,Mixture,,,,,literature_mined,,,,Tigriopus japonicus,,in vivo
+"MWCNTs, SWCNTs",Mixture,,,,,literature_mined,,,,Daphnia magna,,in vivo
+C60 fullerenes,Mixture,,,,,literature_mined,,,,Daphnia magna,,in vivo
+SiO2,Mixture,,,,,literature_mined,,,,Homosapien,,in vitro
+ZnO,Mixture,,,,,literature_mined,,,,Nitrosomonas europaea,,in vitro
+TiO2,Mixture,,,,,literature_mined,,,,Nitrosomonas europaea,,in vitro
+ZnO; Cu; Pb,Mixture,,,,,literature_mined,,,,Soil bacterial communities ,,in vitro
+TiO2,Mixture,,,,,literature_mined,,,,Cyprinus carpio,,in vivo
+C60 fullerenes,Mixture,,,,,literature_mined,,,,Escherichia coli,,in vitro
+QDs (CdSe),Mixture,,,,,literature_mined,,,,Danio rerio,,in vivo
+MWCNT,Mixture,,,,,literature_mined,,,,Eisenia fetida,,in vivo
+Ag,Mixture,,,,,literature_mined,,,,Daphnia magna,,in vivo
+TiO2,Mixture,,,,,literature_mined,,,,Haliotis diversicolor supertexta),,in vivo
+Fe3O4,Mixture,,,,,literature_mined,,,,Tetrahymena Pyriformis,,in vitro
