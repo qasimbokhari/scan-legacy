@@ -50,6 +50,26 @@ def main():
     """Confirm trinh_clean.csv exists as a reference file. No DB insertion."""
     print("=" * 80)
     print("TRINH MIXTURE DATASET — REFERENCE FILE CONFIRMATION")
+    print("""
+Reference CSV generator for Trinh mixture toxicity dataset.
+
+IMPORTANT: This dataset is a literature-review metadata catalog (citations, study 
+methodology, test organisms) with NO actual toxicity outcome values, NO IC50/EC50/
+classification data, and NO material property data (no core_size, zeta_potential, 
+or surface_area fields).
+
+This script does NOT insert data into material_records or toxicity_records tables.
+It only generates a cleaned reference CSV file (data/processed/trinh_clean.csv) 
+containing study metadata for literature indexing purposes.
+
+The Trinh dataset is retained as a reference file only because it provides:
+- Study citations and publication years
+- Mixture composition (nanomaterial + chemical)
+- Test organisms and experimental setup
+- Toxicity endpoints measured (but no actual values)
+
+This is NOT experimental outcome data suitable for quantitative toxicity analysis.
+""")
     print("=" * 80)
     print()
     print("NOTE: This dataset is a literature-review metadata catalog.")
@@ -60,7 +80,6 @@ def main():
     # Confirm the processed CSV exists
     if not TRINH_CLEAN_CSV.exists():
         print(f"WARNING: Reference file not found: {TRINH_CLEAN_CSV}")
-        print("  The file should exist as a cleaned reference catalog.")
         print("  It was generated from the original Trinh Excel supplementary file.")
         print("  No action needed — this file is for reference only, not DB ingestion.")
         return
