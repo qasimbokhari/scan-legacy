@@ -239,7 +239,14 @@ def parse_icnp_cellviability(file_path):
 
 
 def insert_to_database(cleaned_data, session):
-    """Insert cleaned data into database with duplicate prevention."""
+    """Insert cleaned data into database with improved duplicate prevention.
+    
+    Duplicate detection logic:
+    - MaterialRecord: Match on (name + material_type + core_size_nm + zeta_potential_mv + 
+                        surface_area_m2g + coating) - all material properties
+    - ToxicityRecord: Match on (material_id + cell_line + exposure_time_h) - allow multiple
+                      toxicity records per material if they have different test conditions
+    """
     materials_inserted = 0
     toxicities_inserted = 0
     duplicates_skipped = 0
@@ -248,30 +255,52 @@ def insert_to_database(cleaned_data, session):
         material_data = item['material']
         toxicity_data = item['toxicity']
         
-        # Check for duplicate material
+        # Check for duplicate material using all material properties
         existing = session.query(MaterialRecord).filter(
             MaterialRecord.name == material_data['name'],
             MaterialRecord.material_type == material_data['material_type'],
-            MaterialRecord.source_type == material_data['source_type']
+            MaterialRecord.source_type == material_data['source_type'],
+            MaterialRecord.core_size_nm == material_data['core_size_nm'],
+            MaterialRecord.zeta_potential_mv == material_data['zeta_potential_mv'],
+            MaterialRecord.surface_area_m2g == material_data['surface_area_m2g'],
+            MaterialRecord.coating == material_data['coating']
         ).first()
         
         if existing:
-            duplicates_skipped += 1
-            continue
-        
-        # Insert material
-        material = MaterialRecord(**material_data)
-        session.add(material)
-        session.flush()  # Get the ID
-        
-        materials_inserted += 1
-        
-        # Insert toxicity if any toxicity data exists
-        if any(toxicity_data.values()):
-            toxicity_data['material_id'] = material.id
-            toxicity = ToxicityRecord(**toxicity_data)
-            session.add(toxicity)
-            toxicities_inserted += 1
+            # Material exists, check if toxicity record already exists for this test condition
+            if any(toxicity_data.values()):
+                existing_tox = session.query(ToxicityRecord).filter(
+                    ToxicityRecord.material_id == existing.id,
+                    ToxicityRecord.cell_line == toxicity_data['cell_line'],
+                    ToxicityRecord.exposure_time_h == toxicity_data['exposure_time_h']
+                ).first()
+                
+                if existing_tox:
+                    duplicates_skipped += 1
+                    continue
+                else:
+                    # Insert new toxicity record for existing material
+                    toxicity_data['material_id'] = existing.id
+                    toxicity = ToxicityRecord(**toxicity_data)
+                    session.add(toxicity)
+                    toxicities_inserted += 1
+            else:
+                duplicates_skipped += 1
+                continue
+        else:
+            # Insert new material
+            material = MaterialRecord(**material_data)
+            session.add(material)
+            session.flush()  # Get the ID
+            
+            materials_inserted += 1
+            
+            # Insert toxicity if any toxicity data exists
+            if any(toxicity_data.values()):
+                toxicity_data['material_id'] = material.id
+                toxicity = ToxicityRecord(**toxicity_data)
+                session.add(toxicity)
+                toxicities_inserted += 1
     
     session.commit()
     
