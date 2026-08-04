@@ -23,6 +23,7 @@ class MaterialRecord(Base):
     material_type = Column(String, nullable=False)
     core_size_nm = Column(Float, nullable=True)
     zeta_potential_mv = Column(Float, nullable=True)
+    zeta_potential_flagged = Column(Integer, nullable=True)  # 1 if flagged as implausible, 0 or null otherwise
     surface_area_m2g = Column(Float, nullable=True)
     coating = Column(String, nullable=True)
     source_type = Column(String, nullable=False)  # "literature_mined" | "user_contribution" | "api_sync"

@@ -63,53 +63,62 @@ def clean_numeric_value(value):
 def parse_meox_dataset(file_path):
     """Parse MeOx dataset from Zenodo.
     
-    Reads from 'ModelingDataset' sheet which has cleaner structure than InitialDataset.
-    Maps columns: Chemical name, Endpoint / Experimental value [unit] (EC50),
-    and descriptor columns for material properties.
+    Reads from 'InitialDataset' sheet. Row 0 is metadata, row 1 is header, data starts at row 2.
+    Uses column indices to extract data based on the known structure from inspection.
+    
+    Uses ONLY physical measurement columns, NOT descriptor columns.
     """
     print(f"\nProcessing MeOx dataset: {file_path.name}...")
     
-    # Read from ModelingDataset sheet which has cleaner structure
-    df = pd.read_excel(file_path, sheet_name="ModelingDataset")
+    # Read from InitialDataset sheet without header to access by column index
+    df = pd.read_excel(file_path, sheet_name="InitialDataset", header=None)
+    
+    # Row 0 is metadata, row 1 is header, data starts at row 2
+    # Skip row 0 and row 1, start from row 2
+    df = df.iloc[2:].reset_index(drop=True)
     
     print(f"  Original rows: {len(df)}")
-    print(f"  Columns: {list(df.columns)}")
-    
-    # Filter to actual data rows (exclude rows where Chemical name is NaN)
-    df = df[df['Chemical name'].notna()]
-    
-    print(f"  After filtering: {len(df)}")
     
     cleaned_data = []
     implausible_zeta_count = 0
+    flagged_zeta_values = []
     missing_required_count = 0
     
-    for _, row in df.iterrows():
-        # Extract material name
-        name = row.get('Chemical name')
+    for idx, row in df.iterrows():
+        # Extract by column indices based on inspection:
+        # Column 2: Chemical name
+        # Column 4: Endpoint / Experimental value [unit] (EC50)
+        # Column 10: Specific surface area [m2/g], BET
+        # Column 14: zeta potential [mV]
+        # Column 26: Primary size
+        
+        name = row.iloc[2] if len(row) > 2 else None
         if pd.isna(name) or str(name).strip() == '':
             missing_required_count += 1
             continue
         
-        # Extract toxicity endpoint (EC50 from Endpoint / Experimental value [unit])
-        ec50 = clean_numeric_value(row.get('Endpoint / Experimental value [unit]'))
+        # Extract physical measurements by column index
+        ec50 = clean_numeric_value(row.iloc[4] if len(row) > 4 else None)
+        surface_area_m2g = clean_numeric_value(row.iloc[10] if len(row) > 10 else None)
+        zeta_potential_mv = clean_numeric_value(row.iloc[14] if len(row) > 14 else None)
+        core_size_nm = clean_numeric_value(row.iloc[26] if len(row) > 26 else None)
         
-        # Extract material properties from descriptor columns
-        # #1Desc is Primary size, #2Desc is Purity, etc.
-        core_size_nm = clean_numeric_value(row.get('#1Desc'))
-        purity = clean_numeric_value(row.get('#2Desc'))
-        
-        # Other descriptors might contain zeta potential and surface area
-        # For now, we'll set them to None since the exact mapping needs verification
-        zeta_potential_mv = None
-        surface_area_m2g = None
+        # Physical plausibility check for zeta potential
+        zeta_potential_flagged = None
+        if zeta_potential_mv is not None:
+            if zeta_potential_mv < ZETA_POTENTIAL_MIN_MV or zeta_potential_mv > ZETA_POTENTIAL_MAX_MV:
+                print(f"  WARNING: Implausible zeta potential {zeta_potential_mv} mV for {name} - FLAGGED")
+                implausible_zeta_count += 1
+                zeta_potential_flagged = 1
+                flagged_zeta_values.append((str(name), zeta_potential_mv))
         
         material_record = {
             'name': str(name),
             'material_type': 'Metal Oxide',  # MeOx dataset contains metal oxides
-            'core_size_nm': core_size_nm,
-            'zeta_potential_mv': zeta_potential_mv,
-            'surface_area_m2g': surface_area_m2g,
+            'core_size_nm': core_size_nm,  # Real physical measurement
+            'zeta_potential_mv': zeta_potential_mv,  # Real physical measurement
+            'zeta_potential_flagged': zeta_potential_flagged,  # Flag if implausible
+            'surface_area_m2g': surface_area_m2g,  # Real BET-measured surface area
             'coating': None,  # Not available in MeOx dataset
             'source_type': 'literature_mined',
             'doi': None,  # DOI not available in the data file
@@ -132,58 +141,62 @@ def parse_meox_dataset(file_path):
     print(f"  Missing required fields: {missing_required_count}")
     print(f"  Implausible zeta potential flagged: {implausible_zeta_count}")
     
+    if flagged_zeta_values:
+        print(f"  Flagged zeta potential values:")
+        for name, value in flagged_zeta_values:
+            print(f"    - {name}: {value} mV")
+    
     return cleaned_data, []
 
 
 def parse_sapnet_dataset(file_path):
     """Parse SAPNet dataset from Zenodo.
     
-    Reads from 'ModelingDataset' sheet which has cleaner structure than InitialDataset.
-    Maps columns: Identifier (name), Endpoint / Experimental value [unit] (pEC50),
-    and Descriptor column for material properties.
+    Reads from 'InitialDataset' sheet. Row 0 is metadata, row 1 is header, data starts at row 2.
+    Uses column indices to extract data based on the known structure from inspection.
     
-    NOTE: Investigation found 33 rows in InitialDataset sheet, not 29 as originally expected.
-    This includes metadata rows that will be filtered out during parsing.
+    Uses ONLY physical measurement columns, NOT descriptor columns.
     """
     print(f"\nProcessing SAPNet dataset: {file_path.name}...")
     
-    # Read from ModelingDataset sheet which has cleaner structure
-    df = pd.read_excel(file_path, sheet_name="ModelingDataset")
+    # Read from InitialDataset sheet without header to access by column index
+    df = pd.read_excel(file_path, sheet_name="InitialDataset", header=None)
+    
+    # Row 0 is metadata, row 1 is header, data starts at row 2
+    # Skip row 0 and row 1, start from row 2
+    df = df.iloc[2:].reset_index(drop=True)
     
     print(f"  Original rows: {len(df)}")
-    print(f"  Columns: {list(df.columns)}")
-    
-    # Filter to actual data rows (exclude rows where Identifier (name) is NaN)
-    df = df[df['Identifier (name)'].notna()]
-    
-    print(f"  After filtering: {len(df)}")
     
     cleaned_data = []
     missing_required_count = 0
     
-    for _, row in df.iterrows():
-        # Extract material name
-        name = row.get('Identifier (name)')
+    for idx, row in df.iterrows():
+        # Extract by column indices based on inspection:
+        # Column 1: Chemical name (Identifier)
+        # Column 5: Endpoint / Experimental value [unit] (pEC50)
+        # Column 21: BETarea
+        # Column 6: Cell line
+        # Column 10: Exposure time [h]
+        
+        name = row.iloc[1] if len(row) > 1 else None
         if pd.isna(name) or str(name).strip() == '':
             missing_required_count += 1
             continue
         
-        # Extract material properties from Descriptor column
-        surface_area_m2g = clean_numeric_value(row.get('Descriptor\n𝜒𝑚𝑖𝑥'))
-        
-        # Extract toxicity endpoint (pEC50)
-        pec50 = clean_numeric_value(row.get('Endpoint / Experimental value [unit]'))
-        
-        # SAPNet uses CHO-K1 cell line and 24h exposure consistently
-        cell_line = 'CHO-K1'
-        exposure_time_h = 24.0
+        # Extract physical measurements by column index
+        pec50 = clean_numeric_value(row.iloc[5] if len(row) > 5 else None)
+        surface_area_m2g = clean_numeric_value(row.iloc[21] if len(row) > 21 else None)
+        cell_line = row.iloc[6] if len(row) > 6 else None
+        exposure_time_h = clean_numeric_value(row.iloc[10] if len(row) > 10 else None)
         
         material_record = {
             'name': str(name),
             'material_type': 'TiO2-based',  # SAPNet contains TiO2-based nanomaterials
-            'core_size_nm': None,  # Not available in SAPNet dataset
-            'zeta_potential_mv': None,  # Not available in SAPNet dataset
-            'surface_area_m2g': surface_area_m2g,
+            'core_size_nm': None,  # Not available in SAPNet InitialDataset sheet
+            'zeta_potential_mv': None,  # Not available in SAPNet InitialDataset sheet
+            'zeta_potential_flagged': None,  # No zeta potential to flag
+            'surface_area_m2g': surface_area_m2g,  # Real BET-measured surface area
             'coating': None,  # Coating info is in name (e.g., 0.1Ag_0.1Pd)
             'source_type': 'literature_mined',
             'doi': None,  # DOI not available in the data file
@@ -193,7 +206,7 @@ def parse_sapnet_dataset(file_path):
             'ic50': None,  # SAPNet uses pEC50, not IC50
             'ec50': None,  # SAPNet uses pEC50, not EC50
             'pec50': pec50,
-            'cell_line': cell_line,
+            'cell_line': str(cell_line) if pd.notna(cell_line) else None,
             'exposure_time_h': exposure_time_h,
         }
         
