@@ -155,6 +155,34 @@ def load_and_clean(csv_path: Path) -> pd.DataFrame:
     return df
 
 
+def check_existing_data(df: pd.DataFrame, session) -> bool:
+    """Check if data from this source already exists in sensor_benchmark_records.
+
+    Uses sensor_id as the deduplication key since it's unique per row in the source CSV.
+    Returns True if any duplicates are detected (meaning data already exists), False otherwise.
+    """
+    print("Checking for existing data from this source...")
+
+    # Get all sensor_ids from the CSV
+    csv_sensor_ids = set(df["sensor_id"].unique())
+    print(f"  CSV contains {len(csv_sensor_ids)} unique sensor_ids")
+
+    # Check if any of these sensor_ids already exist in the database
+    existing_sensor_ids = session.query(SensorBenchmarkRecord.sensor_id).filter(
+        SensorBenchmarkRecord.sensor_id.in_(csv_sensor_ids)
+    ).all()
+
+    existing_sensor_ids = set([sid[0] for sid in existing_sensor_ids])
+
+    if existing_sensor_ids:
+        print(f"  Found {len(existing_sensor_ids)} sensor_ids already in database")
+        print(f"  Skipping insertion to avoid duplicates.")
+        return True
+    else:
+        print(f"  No existing sensor_ids found. Safe to proceed.")
+        return False
+
+
 def insert_records(df: pd.DataFrame, session) -> int:
     """Bulk-insert cleaned rows into sensor_benchmark_records.
 
@@ -261,6 +289,19 @@ def main():
         df = load_and_clean(CSV_PATH)
         print(f"  Rows after cleaning: {len(df)}")
         print()
+
+        # ------------------------------------------------------------------ #
+        # Check for existing data (duplicate detection)                        #
+        # ------------------------------------------------------------------ #
+        if check_existing_data(df, session):
+            print()
+            print("=" * 60)
+            print("DUPLICATE DETECTION")
+            print("=" * 60)
+            print("Data from this source already exists in sensor_benchmark_records.")
+            print("Skipping insertion to avoid duplicates.")
+            print("=" * 60)
+            return
 
         # ------------------------------------------------------------------ #
         # Insert                                                               #
