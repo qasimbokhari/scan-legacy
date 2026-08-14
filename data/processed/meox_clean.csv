@@ -1,18 +1,16 @@
-name,material_type,core_size_nm,zeta_potential_mv,surface_area_m2g,coating,source_type,doi,ic50,ec50,cell_line,exposure_time_h
-Unknown_MeOx,Metal Oxide,,,,,literature_mined,10.5281/zenodo.XXXXXX,,,,
-Unknown_MeOx,Metal Oxide,,,,,literature_mined,10.5281/zenodo.XXXXXX,,,,
-Unknown_MeOx,Metal Oxide,,,,,literature_mined,10.5281/zenodo.XXXXXX,,,,
-Unknown_MeOx,Metal Oxide,,,,,literature_mined,10.5281/zenodo.XXXXXX,,,,
-Unknown_MeOx,Metal Oxide,,,,,literature_mined,10.5281/zenodo.XXXXXX,,,,
-Unknown_MeOx,Metal Oxide,,,,,literature_mined,10.5281/zenodo.XXXXXX,,,,
-Unknown_MeOx,Metal Oxide,,,,,literature_mined,10.5281/zenodo.XXXXXX,,,,
-Unknown_MeOx,Metal Oxide,,,,,literature_mined,10.5281/zenodo.XXXXXX,,,,
-Unknown_MeOx,Metal Oxide,,,,,literature_mined,10.5281/zenodo.XXXXXX,,,,
-Unknown_MeOx,Metal Oxide,,,,,literature_mined,10.5281/zenodo.XXXXXX,,,,
-Unknown_MeOx,Metal Oxide,,,,,literature_mined,10.5281/zenodo.XXXXXX,,,,
-Unknown_MeOx,Metal Oxide,,,,,literature_mined,10.5281/zenodo.XXXXXX,,,,
-Unknown_MeOx,Metal Oxide,,,,,literature_mined,10.5281/zenodo.XXXXXX,,,,
-Unknown_MeOx,Metal Oxide,,,,,literature_mined,10.5281/zenodo.XXXXXX,,,,
-Unknown_MeOx,Metal Oxide,,,,,literature_mined,10.5281/zenodo.XXXXXX,,,,
-Unknown_MeOx,Metal Oxide,,,,,literature_mined,10.5281/zenodo.XXXXXX,,,,
-Unknown_MeOx,Metal Oxide,,,,,literature_mined,10.5281/zenodo.XXXXXX,,,,
+name,material_type,core_size_nm,zeta_potential_mv,zeta_potential_flagged,surface_area_m2g,coating,source_type,doi,ic50,ec50,pec50,cell_line,exposure_time_h
+Zinc silicate,Metal Oxide,904.5,49.4,,23.2,,literature_mined,,,0.553931,,HaCaT,24.0
+Copper oxide,Metal Oxide,743.5,55.3,,12.8,,literature_mined,,,1.10092,,HaCaT,24.0
+Nickel oxide green,Metal Oxide,735.0,432.1,1.0,74.9,,literature_mined,,,12.844,,HaCaT,24.0
+Antimony oxide,Metal Oxide,1668.0,62.59,,47.9,,literature_mined,,,38.8673,,HaCaT,24.0
+Yttrium oxide,Metal Oxide,1252.0,19.4,,36.7,,literature_mined,,,43.2504,,HaCaT,24.0
+Nickel oxide black,Metal Oxide,735.0,81.0,,79.3,,literature_mined,,,55.5572,,HaCaT,24.0
+Cobalt monoxide,Metal Oxide,757.0,44.9,,45.1,,literature_mined,,,57.4486,,HaCaT,24.0
+Titanium dioxide anatase,Metal Oxide,658.0,65.8,,281.0,,literature_mined,,,62.9564,,HaCaT,24.0
+Cobalt blue,Metal Oxide,1154.8,74.1,,45.8,,literature_mined,,,63.4551,,HaCaT,24.0
+Indium tin oxide,Metal Oxide,1116.4,464.0,1.0,28.7,,literature_mined,,,63.468,,HaCaT,24.0
+Aluminium oxide,Metal Oxide,1154.8,20.6,,49.4,,literature_mined,,,78.241,,HaCaT,24.0
+Cerium oxide,Metal Oxide,1053.6,75.8,,84.0,,literature_mined,,,94.7394,,HaCaT,24.0
+Zinc oxide,Metal Oxide,904.5,80.1,,31.5,,literature_mined,,,1.71685,,HaCaT,24.0
+Tin oxide,Metal Oxide,708.4,163.6,1.0,41.2,,literature_mined,,,54.9182,,HaCaT,24.0
+Gadolinium oxide,Metal Oxide,1182.8,43.0,,23.4,,literature_mined,,,62.9819,,HaCaT,24.0
