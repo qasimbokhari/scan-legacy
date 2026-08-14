@@ -1,0 +1,13 @@
+{
+  "n": 1,
+  "electrode_area_cm2": 0.2,
+  "scan_rate_V_s": 0.01,
+  "concentration_mol_cm3": 1e-06,
+  "diffusion_coefficient_cm2_s": 2e-06,
+  "e_start_V": -0.2,
+  "e_switch_V": 0.6,
+  "e_formal_V": 0.2,
+  "peak_current_A": 7.608468965567251e-06,
+  "noise_std_fraction": 0.02,
+  "random_seed": 42
+}

@@ -1,0 +1,8 @@
+{
+  "Rs": 100.0,
+  "Rct": 1000.0,
+  "Cdl": 1e-06,
+  "warburg_coefficient": 0.0,
+  "noise_std_fraction": 0.02,
+  "random_seed": 45
+}
