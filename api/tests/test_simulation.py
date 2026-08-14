@@ -5,12 +5,17 @@ Tests validate that the CV and EIS simulators generate realistic data
 that is consistent with the physics layer functions.
 """
 
+import sys
+from pathlib import Path
+
+# Add parent directory to path for imports (running from api/ directory)
+sys.path.append(str(Path(__file__).parent.parent))
+
 import pytest
 import numpy as np
 import json
-from pathlib import Path
-from api.ml.simulation import cv_simulator, eis_simulator
-from api.ml.physics import electrochemistry, eis
+from ml.simulation import cv_simulator, eis_simulator
+from ml.physics import electrochemistry, eis
 
 
 class TestCVSimulator:

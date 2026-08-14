@@ -8,11 +8,11 @@ from sqlalchemy import pool
 from alembic import context
 
 # Add the parent directory to sys.path to import config and models
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(__file__)))))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
 
-from api.app.core.config import settings
-from api.app.db.session import Base
-from api.app.db import models  # noqa: F401
+from app.core.config import settings
+from app.db.session import Base
+from app.db import models  # noqa: F401
 
 # this is the Alembic Config object, which provides
 # access to the values within the .ini file in use.

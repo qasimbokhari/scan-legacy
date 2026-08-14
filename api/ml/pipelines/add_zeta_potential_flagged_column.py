@@ -5,11 +5,11 @@ Manually add zeta_potential_flagged column to material_records table.
 import sys
 from pathlib import Path
 
-# Add parent directory to path for imports
-sys.path.append(str(Path(__file__).parent.parent.parent.parent))
+# Add parent directory to path for imports (running from api/ directory)
+sys.path.append(str(Path(__file__).parent.parent.parent))
 
 from sqlalchemy import text
-from api.app.db.session import engine
+from app.db.session import engine
 
 
 def main():

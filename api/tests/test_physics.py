@@ -4,9 +4,15 @@ Unit tests for physics calculation modules.
 Tests validate against known textbook reference values and edge cases.
 """
 
+import sys
+from pathlib import Path
+
+# Add parent directory to path for imports (running from api/ directory)
+sys.path.append(str(Path(__file__).parent.parent))
+
 import pytest
 import numpy as np
-from api.ml.physics import electrochemistry, eis, nanomaterial, constants
+from ml.physics import electrochemistry, eis, nanomaterial, constants
 
 
 class TestElectrochemistry:

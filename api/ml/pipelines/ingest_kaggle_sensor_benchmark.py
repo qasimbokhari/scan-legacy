@@ -49,13 +49,13 @@ from pathlib import Path
 
 import pandas as pd
 
-# Add repo root to sys.path
-sys.path.append(str(Path(__file__).parent.parent.parent.parent))
+# Add repo root to sys.path (running from api/ directory)
+sys.path.append(str(Path(__file__).parent.parent.parent))
 
 from sqlalchemy.orm import sessionmaker
 
-from api.app.db.models import MaterialRecord, SensorBenchmarkRecord, ToxicityRecord
-from api.app.db.session import engine
+from app.db.models import MaterialRecord, SensorBenchmarkRecord, ToxicityRecord
+from app.db.session import engine
 
 # Set UTF-8 output on Windows
 if sys.platform == "win32":
@@ -65,7 +65,7 @@ if sys.platform == "win32":
 # ---------------------------------------------------------------------------
 # Constants
 # ---------------------------------------------------------------------------
-BASE_DIR = Path(__file__).parent.parent.parent.parent
+BASE_DIR = Path(__file__).parent.parent.parent
 CSV_PATH = BASE_DIR / "data" / "raw" / "kaggle_electrochemical_sensor" / "environmental_nanosensor_dataset.csv"
 
 SOURCE_TYPE = "kaggle_unverified"

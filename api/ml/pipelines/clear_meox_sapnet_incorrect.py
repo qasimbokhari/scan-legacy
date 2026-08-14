@@ -6,12 +6,12 @@ These were inserted from the wrong sheet (ModelingDataset instead of InitialData
 import sys
 from pathlib import Path
 
-# Add parent directory to path for imports
-sys.path.append(str(Path(__file__).parent.parent.parent.parent))
+# Add parent directory to path for imports (running from api/ directory)
+sys.path.append(str(Path(__file__).parent.parent.parent))
 
 from sqlalchemy.orm import sessionmaker
-from api.app.db.models import MaterialRecord, ToxicityRecord
-from api.app.db.session import engine
+from app.db.models import MaterialRecord, ToxicityRecord
+from app.db.session import engine
 
 # Set UTF-8 encoding for output
 if sys.platform == 'win32':
