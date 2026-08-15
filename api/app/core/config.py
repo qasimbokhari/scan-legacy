@@ -2,7 +2,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
-    DATABASE_URL: str = "sqlite:///./scan_legacy.db"  # SQLite for local development
+    DATABASE_URL: str = "postgresql://scan:scan@localhost:5432/scan_legacy"  # Postgres for local development (matches docker-compose)
     JWT_SECRET: str = "test_secret_key_for_development_only"  # Default for testing, should be overridden in production
     JWT_ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 15
