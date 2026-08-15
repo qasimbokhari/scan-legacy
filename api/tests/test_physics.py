@@ -12,6 +12,7 @@ sys.path.append(str(Path(__file__).parent.parent))
 
 import pytest
 import numpy as np
+import math
 from ml.physics import electrochemistry, eis, nanomaterial, constants
 
 
@@ -194,25 +195,56 @@ class TestElectrochemistry:
         """
         Test Nicholson electron transfer rate calculation.
         
-        Note: This is a qualitative test since the Nicholson working curve is empirical.
-        The Nicholson method relates peak separation to kinetic parameter psi, then to k0.
-        For a quasi-reversible system with ΔEp = 120 mV, we expect a finite k0 value.
+        The Nicholson method requires reading from an empirical working curve table
+        (Nicholson 1965, Table 1) rather than a closed-form equation. This test
+        validates that the polynomial approximation reproduces the published (ψ, ΔEp/n)
+        relationship from Nicholson's working curve within acceptable tolerance.
+        
+        Reference data points from Nicholson (1965) working curve:
+        - ΔEp/n = 61 mV (reversible limit) → ψ → ∞ (k0 very large)
+        - ΔEp/n = 90 mV → ψ ≈ 0.5 (moderately quasi-reversible)
+        - ΔEp/n = 120 mV → ψ ≈ 0.2 (slow quasi-reversible)
+        - ΔEp/n = 200 mV → ψ ≈ 0.05 (approaching irreversible)
+        
+        This test validates the polynomial fit produces ψ values consistent with
+        the published working curve trend, then validates k0 calculation.
         Source: Nicholson, R. S. (1965). Anal. Chem., 37(11), 1351-1355.
         """
-        # Typical values for a quasi-reversible system
-        delta_ep_mV = 120  # mV
-        scan_rate_V_s = 0.1
-        D = 1e-5
-        n = 1
-        T = 298.15
+        # Test that the polynomial approximation reproduces working curve trends
+        # For ΔEp/n > 61 mV, ψ should decrease as ΔEp/n increases
+        psi_90 = electrochemistry.nicholson_electron_transfer_rate(90, 0.1, 1e-5, 1, 298.15)
+        psi_120 = electrochemistry.nicholson_electron_transfer_rate(120, 0.1, 1e-5, 1, 298.15)
+        psi_200 = electrochemistry.nicholson_electron_transfer_rate(200, 0.1, 1e-5, 1, 298.15)
         
-        k0 = electrochemistry.nicholson_electron_transfer_rate(
-            delta_ep_mV, scan_rate_V_s, D, n, T
-        )
+        # Extract ψ from k0 using the inverse relationship for comparison
+        # ψ = k0 / sqrt(a * n * v / D) where a = nF/RT
+        # This validates the polynomial trend without needing exact ψ values
+        a = (1 * 96485.33) / (8.31446 * 298.15)  # nF/RT
+        expected_factor = math.sqrt((a * 1 * 0.1) / 1e-5)
         
-        # k0 should be positive and in a reasonable range for electrochemical systems
-        assert k0 > 0, f"k0 should be positive, got {k0}"
-        assert k0 < 1.0, f"k0 should be < 1 cm/s for typical systems, got {k0}"
+        psi_90_extracted = psi_90 / expected_factor
+        psi_120_extracted = psi_120 / expected_factor
+        psi_200_extracted = psi_200 / expected_factor
+        
+        # Validate monotonic decrease: ψ should decrease as ΔEp increases
+        assert psi_90_extracted > psi_120_extracted, \
+            f"ψ should decrease with ΔEp: ψ(90)={psi_90_extracted:.3f}, ψ(120)={psi_120_extracted:.3f}"
+        assert psi_120_extracted > psi_200_extracted, \
+            f"ψ should decrease with ΔEp: ψ(120)={psi_120_extracted:.3f}, ψ(200)={psi_200_extracted:.3f}"
+        
+        # Validate the extracted ψ values are in reasonable ranges
+        # based on Nicholson's working curve:
+        assert 0.3 < psi_90_extracted < 0.7, \
+            f"ψ(90) should be ~0.5, got {psi_90_extracted:.3f}"
+        assert 0.1 < psi_120_extracted < 0.3, \
+            f"ψ(120) should be ~0.2, got {psi_120_extracted:.3f}"
+        assert 0.01 < psi_200_extracted < 0.1, \
+            f"ψ(200) should be ~0.05, got {psi_200_extracted:.3f}"
+        
+        # Validate near-reversible limit: for ΔEp/n = 61 mV, k0 should be very large
+        k0_reversible = electrochemistry.nicholson_electron_transfer_rate(61, 0.1, 1e-5, 1, 298.15)
+        assert k0_reversible > 1.0, \
+            f"Near-reversible system should have large k0, got {k0_reversible}"
     
     def test_nicholson_invalid_inputs(self):
         """Test that Nicholson raises ValueError for invalid inputs."""
@@ -420,12 +452,16 @@ class TestNanomaterial:
         """
         Test Debye-Hückel zeta potential correction.
         
-        Note: This is a qualitative test since the correction is approximate based on
-        Debye-Hückel theory assumptions. The implementation uses the Debye length
-        calculation to approximate double-layer compression effects.
-        We test that:
-        1. Higher ionic strength reduces zeta potential (double layer compression)
-        2. Zero ionic strength returns unchanged value
+        The Debye-Hückel correction requires numerical evaluation of Henry's function
+        for precise zeta potential correction across all κa regimes. This implementation
+        uses an exponential decay approximation based on Debye length. The test validates:
+        1. Zero ionic strength returns unchanged value (no double layer compression)
+        2. Higher ionic strength reduces zeta potential (double layer compression)
+        3. The correction produces monotonic behavior consistent with physical expectations
+        
+        For precise corrections requiring the full Henry function (which accounts for
+        electrophoretic retardation effects between Hückel and Smoluchowski limits),
+        use numerical evaluation or the limiting case tests below.
         Source: Debye, P., & Hückel, E. (1923). Physikalische Zeitschrift, 24, 185-206;
         Hunter, R. J. (1981). Zeta Potential in Colloid Science. Academic Press.
         """
@@ -441,6 +477,73 @@ class TestNanomaterial:
         
         assert abs(zeta_high) < abs(zeta_low), \
             "Higher ionic strength should reduce zeta potential magnitude"
+        
+        # Validate monotonic behavior: correction factor should decrease with ionic strength
+        zeta_very_low = nanomaterial.debye_huckel_corrected_zeta_potential(raw_zeta, 0.0001)
+        assert abs(zeta_low) < abs(zeta_very_low), \
+            "Correction should be monotonic with ionic strength"
+
+    def test_debye_length_calculation(self):
+        """
+        Test Debye length calculation against known reference values.
+        
+        Reference: For 1 mM NaCl solution at 25°C:
+        - I = 0.001 mol/L
+        - Expected Debye length ≈ 9.6 nm
+        Source: Standard colloid science textbooks and the Debye-Hückel theory.
+        """
+        # Test 1 mM ionic strength at 25°C
+        debye_length_m = nanomaterial.debye_length(0.001, 298.15)
+        debye_length_nm = debye_length_m * 1e9
+        
+        # Expected Debye length for 1 mM at 25°C is ~9.6 nm
+        expected_nm = 9.6
+        assert abs(debye_length_nm - expected_nm) / expected_nm < 0.05, \
+            f"Debye length: {debye_length_nm:.2f} nm, expected: {expected_nm} nm"
+        
+        # Test that Debye length decreases with ionic strength
+        debye_length_10mM = nanomaterial.debye_length(0.01, 298.15) * 1e9
+        assert debye_length_10mM < debye_length_nm, \
+            "Debye length should decrease with ionic strength"
+        
+        # Test zero ionic strength (should be infinite)
+        debye_length_zero = nanomaterial.debye_length(0.0, 298.15)
+        assert debye_length_zero == float('inf'), \
+            "Zero ionic strength should give infinite Debye length"
+
+    def test_henry_function_limiting_cases(self):
+        """
+        Test Henry function approximation against known limiting cases.
+        
+        The Henry function f(κa) has two well-established limiting cases:
+        - Hückel limit (κa ≪ 1): f(κa) → 1.0 (small particles, low ionic strength)
+        - Smoluchowski limit (κa ≫ 1): f(κa) → 1.5 (large particles, high ionic strength)
+        
+        This test validates that the approximation correctly reproduces these limits.
+        Source: Henry, D. C. (1931). Proc. R. Soc. Lond. A, 133, 106-129;
+        Hunter, R. J. (1981). Zeta Potential in Colloid Science. Academic Press.
+        """
+        # Hückel limit: κa → 0 should give f(κa) → 1.0
+        f_huckel = nanomaterial.henry_function_approximation(0.001)
+        assert abs(f_huckel - 1.0) < 0.01, \
+            f"Hückel limit should approach 1.0, got {f_huckel}"
+        
+        # Smoluchowski limit: κa → ∞ should give f(κa) → 1.5
+        f_smoluchowski = nanomaterial.henry_function_approximation(1000.0)
+        assert abs(f_smoluchowski - 1.5) < 0.01, \
+            f"Smoluchowski limit should approach 1.5, got {f_smoluchowski}"
+        
+        # Intermediate values should be between 1.0 and 1.5
+        f_intermediate = nanomaterial.henry_function_approximation(1.0)
+        assert 1.0 < f_intermediate < 1.5, \
+            f"Intermediate κa should give f between 1.0 and 1.5, got {f_intermediate}"
+        
+        # Monotonic increase: f(κa) should increase with κa
+        f_01 = nanomaterial.henry_function_approximation(0.1)
+        f_1 = nanomaterial.henry_function_approximation(1.0)
+        f_10 = nanomaterial.henry_function_approximation(10.0)
+        assert f_01 < f_1 < f_10, \
+            "Henry function should increase monotonically with κa"
     
     def test_debye_huckel_invalid_inputs(self):
         """Test that Debye-Hückel raises ValueError for invalid inputs."""

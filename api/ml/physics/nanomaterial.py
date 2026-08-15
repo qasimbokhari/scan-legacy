@@ -141,14 +141,19 @@ def debye_huckel_corrected_zeta_potential(
     - The correction factor is: exp(-κ * a) where a is a characteristic length scale
       (approximated here as 1 nm for typical nanoparticles)
     
-    For precise corrections, use the full Poisson-Boltzmann equation or
-    site-specific calibration.
+    This implementation approximates the double-layer compression effect
+    using an exponential decay model based on Debye length. For precise
+    corrections requiring the full Henry function (which accounts for
+    electrophoretic retardation effects), use numerical evaluation of
+    Henry's equation or the limiting cases: Hückel limit (κa ≪ 1, f=1.0)
+    and Smoluchowski limit (κa ≫ 1, f=1.5).
     
     References
     ----------
     Debye, P., & Hückel, E. (1923). Zur Theorie der Elektrolyte. 
     Physikalische Zeitschrift, 24, 185-206.
     Hunter, R. J. (1981). Zeta Potential in Colloid Science. Academic Press.
+    Henry, D. C. (1931). Proc. R. Soc. Lond. A, 133, 106-129 (Henry function).
     """
     if ionic_strength_mol_L < 0:
         raise ValueError("Ionic strength cannot be negative")
@@ -193,3 +198,111 @@ def debye_huckel_corrected_zeta_potential(
     corrected_zeta_mV = raw_zeta_mV * correction_factor
     
     return corrected_zeta_mV
+
+
+def debye_length(
+    ionic_strength_mol_L: float,
+    temperature_K: float = 298.15,
+    epsilon_r: float = 78.5,
+) -> float:
+    """
+    Calculate Debye length for a given ionic strength and temperature.
+
+    The Debye length (κ⁻¹) is the characteristic length scale of electrical
+    double layer screening in electrolyte solutions.
+    
+    κ⁻¹ = sqrt(ε₀εᵣkT / (2NAe²I))
+    
+    Parameters
+    ----------
+    ionic_strength_mol_L : float
+        Ionic strength of the solution in mol/L
+    temperature_K : float, optional
+        Temperature in Kelvin, default 298.15 K (25°C)
+    epsilon_r : float, optional
+        Relative permittivity of the solvent, default 78.5 for water at 25°C
+    
+    Returns
+    -------
+    float
+        Debye length in meters
+    
+    Raises
+    ------
+    ValueError
+        If ionic strength is negative or temperature is negative or zero
+    
+    References
+    ----------
+    Debye, P., & Hückel, E. (1923). Physikalische Zeitschrift, 24, 185-206.
+    """
+    if ionic_strength_mol_L < 0:
+        raise ValueError("Ionic strength cannot be negative")
+    if temperature_K <= 0:
+        raise ValueError("Temperature must be positive")
+    
+    # If ionic strength is zero, Debye length is infinite
+    if ionic_strength_mol_L == 0:
+        return float('inf')
+    
+    # Avogadro's number (mol^-1)
+    NA = 6.02214076e23
+    
+    # Elementary charge (C)
+    e = ELEMENTARY_CHARGE
+    
+    # Calculate Debye length (in meters)
+    # Convert ionic strength from mol/L to mol/m³ (multiply by 1000)
+    I_m3 = ionic_strength_mol_L * 1000
+    
+    numerator = VACUUM_PERMITTIVITY * epsilon_r * BOLTZMANN_CONSTANT * temperature_K
+    denominator = 2 * NA * (e ** 2) * I_m3
+    
+    debye_length_m = math.sqrt(numerator / denominator)
+    
+    return debye_length_m
+
+
+def henry_function_approximation(kappa_a: float) -> float:
+    """
+    Approximate Henry function f(κa) for electrophoretic mobility calculations.
+
+    The Henry function describes the relationship between electrophoretic
+    mobility and zeta potential, accounting for double layer retardation effects.
+    It has two well-known limiting cases:
+    - Hückel limit (κa ≪ 1): f(κa) → 1.0
+    - Smoluchowski limit (κa ≫ 1): f(κa) → 1.5
+    
+    This implementation uses a smooth interpolation between the limits:
+    f(κa) = 1.0 + 0.5 * (1 - exp(-κa))
+    
+    Parameters
+    ----------
+    kappa_a : float
+        Dimensionless parameter κa, where κ is the Debye length inverse
+        and a is the particle radius
+    
+    Returns
+    -------
+    float
+        Henry function value f(κa)
+    
+    Notes
+    -----
+    This is an approximation. For precise calculations, numerical evaluation
+    of the full Henry integral equation may be required for intermediate κa values.
+    
+    References
+    ----------
+    Henry, D. C. (1931). Proc. R. Soc. Lond. A, 133, 106-129.
+    Hunter, R. J. (1981). Zeta Potential in Colloid Science. Academic Press.
+    """
+    if kappa_a < 0:
+        raise ValueError("κa must be non-negative")
+    
+    # Smooth interpolation between Hückel (1.0) and Smoluchowski (1.5) limits
+    # f(κa) = 1.0 + 0.5 * (1 - exp(-κa))
+    # This gives: f(0) = 1.0, f(∞) = 1.5, and smooth transition
+    henry_f = 1.0 + 0.5 * (1 - math.exp(-kappa_a))
+    
+    return henry_f
