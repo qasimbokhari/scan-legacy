@@ -7,7 +7,6 @@ import { useAuth } from '../contexts/AuthContext'
 import api from '../lib/api'
 import { Button } from '../components/ui/button'
 import { Input } from '../components/ui/input'
-import { Label } from '../components/ui/label'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card'
 import { Form, FormElement, FormControl, FormField, FormItem, FormLabel, FormMessage } from '../components/ui/form'
 
