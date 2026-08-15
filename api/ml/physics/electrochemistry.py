@@ -237,6 +237,73 @@ def cottrell_current(
     return current
 
 
+def randles_sevcik_peak_current(
+    n: int,
+    electrode_area_cm2: float,
+    scan_rate_V_s: float,
+    concentration_mol_cm3: float,
+    diffusion_coefficient_cm2_s: float,
+) -> float:
+    """
+    Calculate peak current from Randles-Sevcik equation (forward direction).
+
+    Implements the Randles-Sevcik equation for cyclic voltammetry:
+    ip = (2.69e5) * n^(3/2) * A * D^(1/2) * v^(1/2) * C
+    
+    This is the forward direction: computes peak current given the diffusion
+    coefficient and other parameters. Used by the CV simulator.
+    
+    Parameters
+    ----------
+    n : int
+        Number of electrons transferred in the redox reaction
+    electrode_area_cm2 : float
+        Electrode surface area in cm²
+    scan_rate_V_s : float
+        Scan rate in V/s
+    concentration_mol_cm3 : float
+        Bulk concentration of electroactive species in mol/cm³
+    diffusion_coefficient_cm2_s : float
+        Diffusion coefficient in cm²/s
+    
+    Returns
+    -------
+    float
+        Peak current in amperes (A)
+    
+    Raises
+    ------
+    ValueError
+        If any input is negative or zero where physically invalid
+    
+    References
+    ----------
+    Bard, A. J., & Faulkner, L. R. (2000). Electrochemical Methods: 
+    Fundamentals and Applications (2nd ed.). Wiley. Chapter 6.
+    """
+    if n <= 0:
+        raise ValueError("Number of electrons must be positive")
+    if electrode_area_cm2 <= 0:
+        raise ValueError("Electrode area must be positive")
+    if scan_rate_V_s <= 0:
+        raise ValueError("Scan rate must be positive")
+    if concentration_mol_cm3 <= 0:
+        raise ValueError("Concentration must be positive")
+    if diffusion_coefficient_cm2_s <= 0:
+        raise ValueError("Diffusion coefficient must be positive")
+    
+    # ip = (2.69e5) * n^(3/2) * A * D^(1/2) * v^(1/2) * C
+    peak_current_A = (
+        RANDLES_SEVCIK_CONSTANT
+        * (n ** 1.5)
+        * electrode_area_cm2
+        * math.sqrt(diffusion_coefficient_cm2_s)
+        * math.sqrt(scan_rate_V_s)
+        * concentration_mol_cm3
+    )
+    return peak_current_A
+
+
 def lod_from_signal_to_noise(
     sensitivity: float,
     noise_std: float,

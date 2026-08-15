@@ -11,8 +11,7 @@ import json
 import csv
 from pathlib import Path
 from typing import Optional
-from ..physics.electrochemistry import randles_sevcik_diffusion_coefficient
-from ..physics.constants import RANDLES_SEVCIK_CONSTANT
+from ..physics.electrochemistry import randles_sevcik_peak_current
 
 
 def generate_cv_curve(
@@ -75,15 +74,9 @@ def generate_cv_curve(
     if random_seed is not None:
         np.random.seed(random_seed)
 
-    # Calculate peak current using Randles-Sevcik equation
-    # ip = (2.69e5) * n^(3/2) * A * D^(1/2) * v^(1/2) * C
-    peak_current_A = (
-        RANDLES_SEVCIK_CONSTANT
-        * (n ** 1.5)
-        * electrode_area_cm2
-        * np.sqrt(diffusion_coefficient_cm2_s)
-        * np.sqrt(scan_rate_V_s)
-        * concentration_mol_cm3
+    # Calculate peak current using Randles-Sevcik equation (forward direction)
+    peak_current_A = randles_sevcik_peak_current(
+        n, electrode_area_cm2, scan_rate_V_s, concentration_mol_cm3, diffusion_coefficient_cm2_s
     )
 
     # For a reversible system, peak separation is ~59/n mV
