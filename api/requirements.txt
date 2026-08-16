@@ -16,3 +16,4 @@ numpy
 pandas
 pytest
 httpx
+openpyxl

@@ -1,7 +1,7 @@
 import uuid
 from datetime import datetime
 from sqlalchemy import Column, String, Float, Integer, ForeignKey, Text, DateTime, JSON
-from sqlalchemy.dialects.postgresql import UUID
+from sqlalchemy.dialects.postgresql import UUID, JSONB
 from app.db.session import Base
 
 
@@ -169,3 +169,38 @@ class SensorBenchmarkRecord(Base):
     )
 
     created_at = Column(DateTime, default=datetime.utcnow)
+
+
+# ---------------------------------------------------------------------------
+# ANALYZER MODULE TABLES — CV/LSV and EIS Analysis Results
+# ---------------------------------------------------------------------------
+
+class AnalyzerResult(Base):
+    __tablename__ = "analyzer_results"
+
+    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    analysis_type = Column(String, nullable=False)  # "cv-lsv" | "eis"
+    
+    # Raw uploaded data stored as JSONB
+    raw_data = Column(JSONB, nullable=False)
+    
+    # Parsed results stored as JSONB
+    processed_results = Column(JSONB, nullable=False)
+    
+    # Fit metadata (residuals, R², etc.)
+    fit_metadata = Column(JSONB, nullable=True)
+    
+    # User who uploaded the data
+    uploaded_by = Column(UUID(as_uuid=True), ForeignKey("users.id"), nullable=False)
+    
+    # Timestamps
+    created_at = Column(DateTime, default=datetime.utcnow)
+    
+    # Optional: scan rate for CV/LSV (if single file)
+    scan_rate_v_s = Column(Float, nullable=True)
+    
+    # Optional: experimental parameters
+    electrode_area_cm2 = Column(Float, nullable=True)
+    concentration_mol_cm3 = Column(Float, nullable=True)
+    n_electrons = Column(Integer, nullable=True)
+    temperature_k = Column(Float, nullable=True)
