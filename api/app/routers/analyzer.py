@@ -11,7 +11,7 @@ from fastapi import APIRouter, Depends, HTTPException, status, UploadFile, File
 from sqlalchemy.orm import Session
 from uuid import UUID
 import numpy as np
-from typing import Optional
+from typing import Optional, Union
 
 from app.db.session import get_db
 from app.db.models import AnalyzerResult, User
@@ -32,7 +32,7 @@ from app.ml.analyzer import (
 router = APIRouter(prefix="/api/v1/analyzer", tags=["analyzer"])
 
 
-@router.post("/cv-lsv", response_model=AnalyzerResultOut, status_code=status.HTTP_201_CREATED)
+@router.post("/cv-lsv", response_model=Union[AnalyzerResultOut, AnalyzerErrorResponse])
 async def analyze_cv_lsv(
     file: UploadFile = File(...),
     scan_rate_v_s: Optional[float] = None,
@@ -161,7 +161,12 @@ async def analyze_cv_lsv(
             error_detail = e.detail
             if isinstance(error_detail, dict):
                 return AnalyzerErrorResponse(**error_detail)
-        raise
+        # For other HTTP exceptions, convert to structured error
+        return AnalyzerErrorResponse(
+            success=False,
+            error=str(e.detail),
+            error_type="parse_error"
+        )
         
     except Exception as e:
         # Handle unexpected errors
@@ -172,7 +177,7 @@ async def analyze_cv_lsv(
         )
 
 
-@router.post("/eis", response_model=AnalyzerResultOut, status_code=status.HTTP_201_CREATED)
+@router.post("/eis", response_model=Union[AnalyzerResultOut, AnalyzerErrorResponse])
 async def analyze_eis(
     file: UploadFile = File(...),
     db: Session = Depends(get_db),
@@ -250,7 +255,12 @@ async def analyze_eis(
             error_detail = e.detail
             if isinstance(error_detail, dict):
                 return AnalyzerErrorResponse(**error_detail)
-        raise
+        # For other HTTP exceptions, convert to structured error
+        return AnalyzerErrorResponse(
+            success=False,
+            error=str(e.detail),
+            error_type="parse_error"
+        )
         
     except Exception as e:
         # Handle unexpected errors

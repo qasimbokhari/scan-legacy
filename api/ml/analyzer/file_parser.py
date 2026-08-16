@@ -46,7 +46,7 @@ def parse_cv_lsv_file(file_content: bytes, filename: str) -> Dict[str, Any]:
     Raises
     ------
     HTTPException
-        If file cannot be parsed or columns cannot be detected
+        If file cannot be parsed or columns cannot be detected (status_code=200 for structured error)
     """
     try:
         # Determine file format
@@ -158,7 +158,7 @@ def parse_eis_file(file_content: bytes, filename: str) -> Dict[str, Any]:
     Raises
     ------
     HTTPException
-        If file cannot be parsed or columns cannot be detected
+        If file cannot be parsed or columns cannot be detected (status_code=200 for structured error)
     """
     try:
         # Determine file format

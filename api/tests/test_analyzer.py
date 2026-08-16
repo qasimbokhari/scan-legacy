@@ -359,6 +359,16 @@ here"""
         
         file_content = csv_content.encode('utf-8')
         
-        # This should raise an exception
-        with pytest.raises(Exception):
+        # This should raise an HTTPException with status_code=200
+        try:
             parse_cv_lsv_file(file_content, "test.csv")
+            assert False, "Should have raised HTTPException"
+        except Exception as e:
+            # Check it's our mock HTTPException with structured error
+            assert hasattr(e, 'status_code'), f"Exception should have status_code: {e}"
+            assert hasattr(e, 'detail'), f"Exception should have detail: {e}"
+            assert e.status_code == 200, f"Status code should be 200, got {e.status_code}"
+            assert isinstance(e.detail, dict), f"Detail should be dict, got {type(e.detail)}"
+            assert e.detail.get('success') == False, "Success should be False"
+            assert 'error' in e.detail, "Detail should contain 'error' field"
+            assert 'error_type' in e.detail, "Detail should contain 'error_type' field"
