@@ -18,16 +18,32 @@ from app.db.models import AnalyzerResult, User
 from app.schemas.analyzer import AnalyzerResultOut, AnalyzerErrorResponse
 from app.schemas.prediction import PredictionEnvelope
 from app.auth.dependencies import get_current_user
-from app.ml.analyzer import (
-    parse_cv_lsv_file,
-    parse_eis_file,
-    detect_peaks,
-    calculate_randles_sevcik_diffusion,
-    calculate_nicholson_k0,
-    calculate_lod_loq,
-    fit_eis_circuit,
-    generate_nyquist_bode_data
-)
+import sys
+from pathlib import Path
+sys.path.append(str(Path(__file__).parent.parent.parent))
+
+try:
+    from app.ml.analyzer import (
+        parse_cv_lsv_file,
+        parse_eis_file,
+        detect_peaks,
+        calculate_randles_sevcik_diffusion,
+        calculate_nicholson_k0,
+        calculate_lod_loq,
+        fit_eis_circuit,
+        generate_nyquist_bode_data
+    )
+except ImportError:
+    from ml.analyzer import (
+        parse_cv_lsv_file,
+        parse_eis_file,
+        detect_peaks,
+        calculate_randles_sevcik_diffusion,
+        calculate_nicholson_k0,
+        calculate_lod_loq,
+        fit_eis_circuit,
+        generate_nyquist_bode_data
+    )
 
 router = APIRouter(prefix="/api/v1/analyzer", tags=["analyzer"])
 
