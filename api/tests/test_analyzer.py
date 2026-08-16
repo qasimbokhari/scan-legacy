@@ -18,15 +18,15 @@ sys.path.append(str(Path(__file__).parent.parent))
 import pytest
 import numpy as np
 import io
-from app.ml.analyzer.cv_lsv_analyzer import (
+from ml.analyzer.cv_lsv_analyzer import (
     detect_peaks,
     calculate_randles_sevcik_diffusion,
     calculate_lod_loq
 )
-from app.ml.analyzer.eis_analyzer import fit_eis_circuit
-from app.ml.analyzer.file_parser import parse_cv_lsv_file, parse_eis_file
-from app.ml.physics.electrochemistry import randles_sevcik_peak_current
-from app.ml.physics.eis import randles_circuit_impedance
+from ml.analyzer.eis_analyzer import fit_eis_circuit
+from ml.analyzer.file_parser import parse_cv_lsv_file, parse_eis_file
+from ml.physics.electrochemistry import randles_sevcik_peak_current
+from ml.physics.eis import randles_circuit_impedance
 
 
 class TestPeakDetection:
