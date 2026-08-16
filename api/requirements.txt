@@ -8,6 +8,8 @@ pydantic-settings
 python-jose[cryptography]
 passlib[bcrypt]
 email-validator
+python-multipart==0.0.29
+python-dotenv==1.2.2
 scikit-learn
 xgboost
 shap
