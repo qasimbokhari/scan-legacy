@@ -4,6 +4,7 @@ from app.core.config import settings
 from app.routers.auth import router as auth_router
 from app.routers.records import router as records_router
 from app.routers.analyzer import router as analyzer_router
+from app.routers.design_studio import router as design_studio_router
 
 app = FastAPI(title="SCAN Legacy API")
 
@@ -18,6 +19,7 @@ app.add_middleware(
 app.include_router(auth_router)
 app.include_router(records_router)
 app.include_router(analyzer_router)
+app.include_router(design_studio_router)
 
 
 @app.get("/health")
