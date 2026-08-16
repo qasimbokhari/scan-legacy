@@ -359,9 +359,6 @@ here"""
         
         file_content = csv_content.encode('utf-8')
         
-        # This should raise an HTTPException with structured error
-        with pytest.raises(Exception) as exc_info:
+        # This should raise an exception
+        with pytest.raises(Exception):
             parse_cv_lsv_file(file_content, "test.csv")
-        
-        # The error should be structured
-        # (actual error handling depends on implementation)
