@@ -9,12 +9,8 @@ Includes:
 
 import numpy as np
 from typing import Dict, Any
-import sys
-from pathlib import Path
-sys.path.append(str(Path(__file__).parent.parent.parent))
-
 from app.schemas.prediction import PredictionEnvelope
-from ml.physics.eis import fit_randles_circuit, randles_circuit_impedance
+from app.ml.physics.eis import fit_randles_circuit, randles_circuit_impedance
 
 
 def fit_eis_circuit(

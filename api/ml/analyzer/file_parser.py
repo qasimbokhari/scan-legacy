@@ -8,19 +8,7 @@ import io
 import pandas as pd
 import numpy as np
 from typing import Tuple, Dict, Any, Optional
-import sys
-from pathlib import Path
-sys.path.append(str(Path(__file__).parent.parent.parent))
-
-try:
-    from fastapi import HTTPException
-except ImportError:
-    # For testing without FastAPI
-    class HTTPException(Exception):
-        def __init__(self, status_code: int, detail: dict):
-            self.status_code = status_code
-            self.detail = detail
-            super().__init__(detail)
+from fastapi import HTTPException
 
 
 def parse_cv_lsv_file(file_content: bytes, filename: str) -> Dict[str, Any]:

@@ -18,11 +18,7 @@ from app.db.models import AnalyzerResult, User
 from app.schemas.analyzer import AnalyzerResultOut, AnalyzerErrorResponse
 from app.schemas.prediction import PredictionEnvelope
 from app.auth.dependencies import get_current_user
-import sys
-from pathlib import Path
-sys.path.append(str(Path(__file__).parent.parent.parent))
-
-from ml.analyzer import (
+from app.ml.analyzer import (
     parse_cv_lsv_file,
     parse_eis_file,
     detect_peaks,

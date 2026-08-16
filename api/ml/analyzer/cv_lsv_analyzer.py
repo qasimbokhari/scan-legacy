@@ -12,12 +12,8 @@ import numpy as np
 from scipy.signal import find_peaks
 from scipy.stats import linregress
 from typing import Dict, Any, Optional, Tuple
-import sys
-from pathlib import Path
-sys.path.append(str(Path(__file__).parent.parent.parent))
-
 from app.schemas.prediction import PredictionEnvelope
-from ml.physics.electrochemistry import (
+from app.ml.physics.electrochemistry import (
     randles_sevcik_diffusion_coefficient,
     nicholson_electron_transfer_rate
 )
@@ -150,7 +146,7 @@ def calculate_randles_sevcik_diffusion(
     # slope = (2.69e5) * n^(3/2) * A * D^(1/2) * C
     # D = [slope / ((2.69e5) * n^(3/2) * A * C)]^2
     
-    from ml.physics.constants import RANDLES_SEVCIK_CONSTANT
+    from app.ml.physics.constants import RANDLES_SEVCIK_CONSTANT
     
     numerator = slope
     denominator = (
