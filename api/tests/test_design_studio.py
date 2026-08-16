@@ -258,6 +258,56 @@ class TestRankingEngine:
         score2, breakdowns2 = engine.score_record(record2, target2)
         expected_score2 = engine.weights['lod']  # 0.30
         assert abs(score2 - expected_score2) < 0.01, f"Partial spec with only LOD should score {expected_score2}"
+    
+    def test_custom_weights_are_used(self):
+        """Test that custom weights passed to the engine are actually used in scoring."""
+        custom_weights = {
+            'analyte': 0.50,  # Increase analyte weight
+            'lod': 0.30,
+            'nanomaterial': 0.10,
+            'transduction': 0.05,
+            'matrix': 0.05
+        }
+        engine = RankingEngine(custom_weights=custom_weights)
+        
+        # Verify custom weights are set
+        assert engine.weights['analyte'] == 0.50, "Custom analyte weight should be used"
+        assert engine.weights['lod'] == 0.30, "Custom LOD weight should be used"
+        
+        # Test scoring with custom weights
+        record = {'analyte': 'Lead', 'lod_mol_per_l': None}
+        target = {'analyte': 'Lead', 'lod_mol_per_l': None}
+        
+        score, breakdowns = engine.score_record(record, target)
+        
+        # Score should use custom analyte weight (0.50)
+        expected_score = 0.50  # 1.0 * 0.50
+        assert abs(score - expected_score) < 0.01, f"Custom weight should be used, expected {expected_score}, got {score}"
+    
+    def test_matching_is_simple_string_containment_no_ml(self):
+        """Test that matching uses simple string containment, not ML/embeddings."""
+        engine = RankingEngine()
+        
+        # Test case-insensitive substring matching (not ML similarity)
+        record = {'analyte': 'Lead ions in solution'}
+        target = {'analyte': 'Lead'}
+        
+        score, breakdowns = engine.score_record(record, target)
+        
+        # Should get fuzzy match score (0.8) because "Lead" is contained in "Lead ions in solution"
+        assert score > 0, "Substring match should produce a score"
+        
+        # Verify it's using string containment logic
+        analyte_breakdown = [b for b in breakdowns if (b.field_name == 'analyte' if hasattr(b, 'field_name') else b.get('field_name') == 'analyte')][0]
+        match_type = analyte_breakdown.details if hasattr(analyte_breakdown, 'details') else analyte_breakdown.get('details')
+        assert match_type['match_type'] in ['exact', 'contains'], "Match type should be exact or contains (string operations)"
+        
+        # Test that completely different strings get no match (not ML similarity)
+        record2 = {'analyte': 'Mercury'}
+        target2 = {'analyte': 'Lead'}
+        
+        score2, breakdowns2 = engine.score_record(record2, target2)
+        assert score2 == 0.0, "Completely different strings should get score 0.0 (no ML similarity scoring)"
 
 
 class TestDesignStudioEndpoints:

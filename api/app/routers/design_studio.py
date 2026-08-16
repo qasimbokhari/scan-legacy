@@ -131,43 +131,44 @@ async def search_sensor_designs(
         meaningful_results = [r for r in ranked_results if r[0] > 0]
         
         # Determine if we have sparse data
-        low_data_flag = len(meaningful_results) < target_spec.max_results
+        low_data_flag = len(meaningful_results) < target_spec.max_results or len(records) == 0
         
         # Build response objects
         ranked_search_results = []
-        for rank, (score, record_dict, field_breakdowns) in enumerate(meaningful_results[:target_spec.max_results], start=1):
-            # Create data quality flag
-            data_quality = create_data_quality_flag(record_dict)
-            
-            # Convert field breakdowns to schema objects
-            field_breakdown_objs = []
-            for fb in field_breakdowns:
-                if hasattr(fb, 'model_dump'):
-                    field_breakdown_objs.append(FieldScoreBreakdown(**fb.model_dump()))
-                elif hasattr(fb, 'dict'):
-                    field_breakdown_objs.append(FieldScoreBreakdown(**fb.dict()))
-                else:
-                    field_breakdown_objs.append(fb)
-            
-            # Create ranked result
-            ranked_result = RankedSearchResult(
-                id=record_dict['id'],
-                nanomaterial=record_dict['nanomaterial'],
-                analyte=record_dict['analyte'],
-                lod_mol_per_l=record_dict['lod_mol_per_l'],
-                sensitivity_value=record_dict['sensitivity_value'],
-                sensitivity_unit=record_dict['sensitivity_unit'],
-                linear_range_low=record_dict['linear_range_low'],
-                linear_range_high=record_dict['linear_range_high'],
-                response_time_s=record_dict['response_time_s'],
-                source_type=record_dict['source_type'],
-                doi=record_dict['doi'],
-                overall_score=score,
-                rank=rank,
-                field_breakdown=field_breakdown_objs,
-                data_quality=data_quality
-            )
-            ranked_search_results.append(ranked_result)
+        if meaningful_results:
+            for rank, (score, record_dict, field_breakdowns) in enumerate(meaningful_results[:target_spec.max_results], start=1):
+                # Create data quality flag
+                data_quality = create_data_quality_flag(record_dict)
+                
+                # Convert field breakdowns to schema objects
+                field_breakdown_objs = []
+                for fb in field_breakdowns:
+                    if hasattr(fb, 'model_dump'):
+                        field_breakdown_objs.append(FieldScoreBreakdown(**fb.model_dump()))
+                    elif hasattr(fb, 'dict'):
+                        field_breakdown_objs.append(FieldScoreBreakdown(**fb.dict()))
+                    else:
+                        field_breakdown_objs.append(fb)
+                
+                # Create ranked result
+                ranked_result = RankedSearchResult(
+                    id=record_dict['id'],
+                    nanomaterial=record_dict['nanomaterial'],
+                    analyte=record_dict['analyte'],
+                    lod_mol_per_l=record_dict['lod_mol_per_l'],
+                    sensitivity_value=record_dict['sensitivity_value'],
+                    sensitivity_unit=record_dict['sensitivity_unit'],
+                    linear_range_low=record_dict['linear_range_low'],
+                    linear_range_high=record_dict['linear_range_high'],
+                    response_time_s=record_dict['response_time_s'],
+                    source_type=record_dict['source_type'],
+                    doi=record_dict['doi'],
+                    overall_score=score,
+                    rank=rank,
+                    field_breakdown=field_breakdown_objs,
+                    data_quality=data_quality
+                )
+                ranked_search_results.append(ranked_result)
         
         # Build search metadata
         search_metadata = {

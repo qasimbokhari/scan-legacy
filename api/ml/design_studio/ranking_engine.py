@@ -24,15 +24,26 @@ class RankingEngine:
     
     Uses weighted similarity scoring with explainable per-field contributions.
     No ML/embeddings - pure deterministic scoring for full transparency.
+    
+    Field Weights Rationale:
+    - Current weights are DEFAULT VALUES that sum to 1.0 (100%)
+    - These were chosen as reasonable starting points but are NOT based on
+      specific domain expertise or experimental validation
+    - Future iterations should adjust weights based on:
+      * Domain expert input on relative importance of each field
+      * User feedback on ranking quality
+      * Analysis of actual search result relevance
+    - Weights are configurable via the custom_weights parameter in __init__
     """
     
     # Default weights for different fields (sum = 1.0)
+    # NOTE: These are arbitrary defaults - adjust based on domain requirements
     DEFAULT_WEIGHTS = {
-        'analyte': 0.35,           # Analyte match is most important
-        'lod': 0.30,               # LOD proximity is critical
-        'nanomaterial': 0.15,      # Material type preference
-        'transduction': 0.10,      # Transduction type
-        'matrix': 0.10,            # Matrix type compatibility
+        'analyte': 0.35,           # Analyte match - moderately high importance
+        'lod': 0.30,               # LOD proximity - high importance for performance specs
+        'nanomaterial': 0.15,      # Material type - moderate importance
+        'transduction': 0.10,      # Transduction type - lower importance
+        'matrix': 0.10,            # Matrix type - lower importance
     }
     
     def __init__(self, custom_weights: Optional[Dict[str, float]] = None):
