@@ -36,6 +36,11 @@ class RankingEngine:
     - Weights are configurable via the custom_weights parameter in __init__
     """
     
+    # Scoring constants for consistency across field types
+    EXACT_MATCH_SCORE = 1.0
+    PARTIAL_MATCH_SCORE = 0.8  # Unified partial/contains match score for all fields
+    NO_MATCH_SCORE = 0.0
+    
     # Default weights for different fields (sum = 1.0)
     # NOTE: These are arbitrary defaults - adjust based on domain requirements
     DEFAULT_WEIGHTS = {
@@ -139,7 +144,7 @@ class RankingEngine:
         """
         # Exact match (case-insensitive)
         if record_analyte.lower().strip() == target_analyte.lower().strip():
-            score = 1.0
+            score = self.EXACT_MATCH_SCORE
             details = {
                 'match_type': 'exact',
                 'record_value': record_analyte,
@@ -147,7 +152,7 @@ class RankingEngine:
             }
         # Contains match (e.g., "Lead" matches "Lead ions")
         elif target_analyte.lower() in record_analyte.lower() or record_analyte.lower() in target_analyte.lower():
-            score = 0.8
+            score = self.PARTIAL_MATCH_SCORE
             details = {
                 'match_type': 'contains',
                 'record_value': record_analyte,
@@ -155,7 +160,7 @@ class RankingEngine:
             }
         # No match
         else:
-            score = 0.0
+            score = self.NO_MATCH_SCORE
             details = {
                 'match_type': 'none',
                 'record_value': record_analyte,
@@ -198,7 +203,7 @@ class RankingEngine:
         
         # Score decays with distance: 1.0 at exact match, 0.0 at 10x difference
         if relative_diff <= 0.1:  # Within 10%
-            score = 1.0
+            score = self.EXACT_MATCH_SCORE
         elif relative_diff <= 0.5:  # Within 50%
             score = 0.8
         elif relative_diff <= 1.0:  # Within 100%
@@ -208,7 +213,7 @@ class RankingEngine:
         elif relative_diff <= 5.0:  # Within 500%
             score = 0.2
         else:  # More than 5x difference
-            score = 0.0
+            score = self.NO_MATCH_SCORE
         
         weight = self.weights.get('lod', 0.30)
         contribution = score * weight
@@ -243,7 +248,7 @@ class RankingEngine:
         """
         # Exact match (case-insensitive)
         if record_material.lower().strip() == target_material.lower().strip():
-            score = 1.0
+            score = self.EXACT_MATCH_SCORE
             details = {
                 'match_type': 'exact',
                 'record_value': record_material,
@@ -251,7 +256,7 @@ class RankingEngine:
             }
         # Contains match (e.g., "Graphene" matches "Graphene oxide")
         elif target_material.lower() in record_material.lower() or record_material.lower() in target_material.lower():
-            score = 0.7
+            score = self.PARTIAL_MATCH_SCORE
             details = {
                 'match_type': 'contains',
                 'record_value': record_material,
@@ -259,7 +264,7 @@ class RankingEngine:
             }
         # No match
         else:
-            score = 0.0
+            score = self.NO_MATCH_SCORE
             details = {
                 'match_type': 'none',
                 'record_value': record_material,

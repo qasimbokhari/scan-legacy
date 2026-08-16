@@ -97,19 +97,19 @@ class TestRankingEngine:
         assert analyte_score == 1.0
     
     def test_fuzzy_analyte_match_score(self):
-        """Test fuzzy analyte match returns weighted score (0.8 * 0.35 = 0.28)."""
+        """Test fuzzy analyte match returns weighted score (PARTIAL_MATCH_SCORE * 0.35 = 0.28)."""
         engine = RankingEngine()
         record = {'analyte': 'Lead ions', 'nanomaterial': 'Graphene'}
         target = {'analyte': 'Lead', 'lod_mol_per_l': None}
         
         score, breakdowns = engine.score_record(record, target)
         
-        # Score should be fuzzy match score (0.8) * analyte weight (0.35) = 0.28
-        expected_score = 0.8 * engine.weights['analyte']
+        # Score should be PARTIAL_MATCH_SCORE (0.8) * analyte weight (0.35) = 0.28
+        expected_score = engine.PARTIAL_MATCH_SCORE * engine.weights['analyte']
         assert abs(score - expected_score) < 0.01, f"Expected score {expected_score} for fuzzy match, got {score}"
         analyte_breakdown = [b for b in breakdowns if (b.field_name == 'analyte' if hasattr(b, 'field_name') else b.get('field_name') == 'analyte')][0]
         analyte_score = analyte_breakdown.score if hasattr(analyte_breakdown, 'score') else analyte_breakdown.get('score')
-        assert analyte_score == 0.8
+        assert analyte_score == engine.PARTIAL_MATCH_SCORE
         analyte_details = analyte_breakdown.details if hasattr(analyte_breakdown, 'details') else analyte_breakdown.get('details')
         assert analyte_details['match_type'] == 'contains'
     
