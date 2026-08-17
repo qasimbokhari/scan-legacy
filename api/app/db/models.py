@@ -172,6 +172,97 @@ class SensorBenchmarkRecord(Base):
 
 
 # ---------------------------------------------------------------------------
+# ISOLATED AIE-CNES TABLE — Unverified Graphene/CNT Sensor Dataset
+# ---------------------------------------------------------------------------
+# This table is intentionally SEPARATE from sensor_performance_records.
+# The AIE_CNES_Dataset.csv (7,654 rows) shows structural indicators of 
+# possible synthetic origin: perfect data quality (0 missing values), 
+# tightly bounded numeric ranges, and binary classification labels.
+# No source paper or laboratory provenance provided.
+#
+# Permitted uses:
+#   - Plausibility-range reference for graphene/CNT sensor design
+#   - Benchmark dataset for sensor classification algorithm testing
+#
+# NOT permitted:
+#   - Training primary sensor performance models
+#   - Ground-truth validation of sensor physics calculations
+#   - Presentation as literature-grade or experimentally validated data
+# ---------------------------------------------------------------------------
+class AieCnesRecord(Base):
+    __tablename__ = "aie_cnes_records"
+
+    # --- Identity ---
+    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+
+    # --- Material composition ---
+    graphene_ratio_pct = Column(Float, nullable=True)     # Graphene percentage
+    cnt_ratio_pct = Column(Float, nullable=True)           # CNT percentage
+
+    # --- Electrode properties ---
+    electrode_surface_area_cm2 = Column(Float, nullable=True)
+    conductivity_s_m = Column(Float, nullable=True)
+
+    # --- Experimental conditions ---
+    ph_level = Column(Float, nullable=True)
+    temperature_c = Column(Float, nullable=True)
+    potential_v = Column(Float, nullable=True)
+    current_ua = Column(Float, nullable=True)
+    scan_rate_mv_s = Column(Float, nullable=True)
+    pulse_amplitude_mv = Column(Float, nullable=True)
+
+    # --- Sensor response ---
+    peak_current_ua = Column(Float, nullable=True)
+    peak_potential_v = Column(Float, nullable=True)
+    snr = Column(Float, nullable=True)
+    interference_level_pct = Column(Float, nullable=True)
+
+    # --- Analyte information ---
+    pollutant_type = Column(String, nullable=True)          # Pesticide | Arsenic | Lead | Nitrate | Mercury
+    pollutant_concentration_ppm = Column(Float, nullable=True)
+    detection_status = Column(Integer, nullable=True)       # Binary classification label
+
+    # --- Provenance (set at ingest time, immutable per-row) ---
+    source_type = Column(
+        String, nullable=False,
+        default="aie_cnes_unverified",
+    )
+    provenance_note = Column(
+        Text, nullable=True,
+        default=(
+            "Provenance unverified. No cited source paper or laboratory. "
+            "Structural indicators suggest possible synthetic origin: "
+            "perfect data quality (0 missing values), tightly bounded numeric ranges, "
+            "binary classification labels. Use only as plausibility-range reference, "
+            "not as literature-grade or experimentally validated data."
+        ),
+    )
+
+    created_at = Column(DateTime, default=datetime.utcnow)
+
+
+# ---------------------------------------------------------------------------
+# ANALYTE REFERENCE TABLES — Molecular Properties for Design Studio
+# ---------------------------------------------------------------------------
+
+class AnalyteCompound(Base):
+    __tablename__ = "analyte_compounds"
+
+    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    name = Column(String, nullable=False)  # Common name (e.g., "Arsenic", "Glucose")
+    pubchem_cid = Column(Integer, nullable=True)  # PubChem Compound ID
+    molecular_formula = Column(String, nullable=True)  # Chemical formula (e.g., "As", "C6H12O6")
+    molecular_weight = Column(Float, nullable=True)  # g/mol
+    xlogp = Column(Float, nullable=True)  # XLogP3 (octanol-water partition coefficient)
+    tpsa = Column(Float, nullable=True)  # Topological Polar Surface Area
+    hbond_donor_count = Column(Integer, nullable=True)  # Hydrogen bond donor count
+    hbond_acceptor_count = Column(Integer, nullable=True)  # Hydrogen bond acceptor count
+    complexity = Column(Float, nullable=True)  # Molecular complexity score
+    source_type = Column(String, nullable=False, default="pubchem")
+    created_at = Column(DateTime, default=datetime.utcnow)
+
+
+# ---------------------------------------------------------------------------
 # ANALYZER MODULE TABLES — CV/LSV and EIS Analysis Results
 # ---------------------------------------------------------------------------
 
