@@ -26,7 +26,7 @@ if sys.platform == 'win32':
     sys.stdout = codecs.getwriter('utf-8')(sys.stdout.buffer, 'strict')
 
 # Define paths
-BASE_DIR = Path(__file__).parent.parent.parent
+BASE_DIR = Path(__file__).parent.parent.parent.parent  # Go up to scan_legacy root
 RAW_DATA_DIR = BASE_DIR / "data" / "raw" / "caNanoLab"
 PROCESSED_DATA_DIR = BASE_DIR / "data" / "processed"
 PROCESSED_DATA_DIR.mkdir(exist_ok=True)
