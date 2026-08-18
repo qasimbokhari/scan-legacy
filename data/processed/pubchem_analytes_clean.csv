@@ -1,0 +1,9 @@
+name,pubchem_cid,molecular_formula,molecular_weight,xlogp,tpsa,hbond_donor_count,hbond_acceptor_count,complexity,source_type
+Arsenic,,As,74.92159,,0.0,,,0.0,pubchem
+Cadmium,,Cd,112.41,,0.0,,,0.0,pubchem
+Cotisol,,C21H30O5,362.5,1.6,94.8,,,684.0,pubchem
+Dopamine,,C8H11NO2,153.18,-1.0,66.5,,,119.0,pubchem
+Glucose,,C6H12O6,180.16,-2.6,110.0,,,151.0,pubchem
+Lead,,Pb,,,0.0,,,0.0,pubchem
+Mercury,,Hg,200.59,,0.0,,,0.0,pubchem
+Nitrate,,NO3-,62.005,-1.4,62.9,,,18.8,pubchem
