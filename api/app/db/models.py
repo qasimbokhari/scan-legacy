@@ -295,3 +295,25 @@ class AnalyzerResult(Base):
     concentration_mol_cm3 = Column(Float, nullable=True)
     n_electrons = Column(Integer, nullable=True)
     temperature_k = Column(Float, nullable=True)
+
+
+# ---------------------------------------------------------------------------
+# ISOLATED NANOREG TABLE — ENANOMAPPER Complex Metrics
+# ---------------------------------------------------------------------------
+class NanoregRecord(Base):
+    __tablename__ = "nanoreg_records"
+
+    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
+    substance_name = Column(String, nullable=False)
+    jrc_id = Column(String, nullable=True)
+    topcategory = Column(String, nullable=True)
+    endpointcategory = Column(String, nullable=True)
+    endpoint = Column(String, nullable=True)
+    value_numeric = Column(Float, nullable=True)
+    unit = Column(String, nullable=True)
+    text_value = Column(String, nullable=True)
+    reference = Column(String, nullable=True)
+    source_type = Column(String, nullable=False, default="nanoreg_mined")
+    provenance_note = Column(Text, nullable=True)
+    created_at = Column(DateTime, default=datetime.utcnow)
+
